@@ -1,0 +1,107 @@
+.announcement {
+  width: 832px;
+}
+
+
+.announcement .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-right: 60px;
+}
+
+.announcement .title {
+  padding: 0;
+}
+
+.announcement .lessAnnouncement {
+  /* visibility: hidden; */
+  display: none;
+  cursor: pointer;
+  font-family: AlibabaPuHuiTi_2_35_Thin;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #2d8abc;
+}
+
+.announcement .news {
+
+  padding-right: 60px;
+  transition: height .3s cubic-bezier(.445, .05, .55, .95);
+  padding-right: 60px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.announcement .news[data-type="more"] {
+  height: 372px;
+  overflow-y: auto;
+}
+
+.announcement .news li {
+  cursor: pointer;
+  font-family: AlibabaPuHuiTi_2_35_Thin;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #acadb2;
+  border-bottom: solid 1px #acadb296;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.announcement .moreAnnouncement {
+  cursor: pointer;
+  margin: 20px 0;
+  border: unset;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #0e8dc2;
+  border-radius: 20px;
+  font-family: AlibabaPuHuiTi_2_35_Thin;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.announcement .top,
+.announcement .news,
+.announcement .moreAnnouncement {
+  opacity: 0;
+  transform: translateY(7rem);
+  transition: opacity .3s cubic-bezier(.445, .05, .55, .95), transform 1s cubic-bezier(.19, 1, .22, 1);
+}
+
+[fade='up'] .announcement .top,
+[fade='up'] .announcement .news,
+[fade='up'] .announcement .moreAnnouncement {
+  opacity: 0;
+  transform: translateY(-7rem);
+}
+
+.visible .announcement .top,
+.visible .announcement .news,
+.visible .announcement .moreAnnouncement {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.visible .announcement .top {
+  transition-delay: .4s;
+}
+
+.visible .announcement .news {
+  transition-delay: .42s;
+}
+
+.visible .announcement .moreAnnouncement {
+  transition-delay: .5s;
+}

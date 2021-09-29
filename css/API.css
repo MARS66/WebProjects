@@ -1,0 +1,164 @@
+.Intermediates,
+.productAPI {
+  padding-bottom: 10px;
+}
+
+.api_content {
+  width: 1143px;
+}
+
+.api_content .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.api_content .title {
+  padding: 0;
+}
+
+.api_content .allAPI {
+  cursor: pointer;
+  font-family: AlibabaPuHuiTi_2_35_Thin;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #2d8abc;
+}
+
+
+.api_display {
+  display: flex;
+  gap: 22px;
+}
+
+.api_display .info {
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+
+.api_display .info_title h4 {
+  font-family: Arial-BoldMT;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #828fa2;
+  padding: 10px 0;
+}
+
+.api_display .imgBox {
+  width: 365px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s, cubic-bezier(.215, .61, .355, 1);
+}
+
+.api_display>li {
+  border: 1px solid #C7C7C7;
+}
+
+.api_display li:hover .imgBox {
+  cursor: pointer;
+  background-color: #F9FAF9;
+}
+
+.api_display .imgBox img {
+  max-width: 100%;
+}
+
+.api_display .info_title p {
+  font-family: ArialMT;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #828fa2;
+  padding-bottom: 8px;
+}
+
+.api_display .info_list li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  font-family: ArialMT;
+  font-size: 12px;
+  line-height: 12px;
+  color: #828fa2;
+  padding: 10px 0;
+  border-bottom: 1px solid #828fa23d;
+}
+
+.api_display .info_list li:last-child {
+  border-bottom: none;
+  padding-bottom: 2;
+}
+
+.api_content .downLoad {
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 110px;
+  height: 40px;
+  background-color: #0e8dc2;
+  border-radius: 20px;
+  font-family: AlibabaPuHuiTi_2_35_Thin;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.api_content .downLoad,
+.api_content .api_display,
+.api_content .top {
+  opacity: 0;
+  transform: translateY(7rem);
+  transition: opacity .3s cubic-bezier(.445, .05, .55, .95), transform 1s cubic-bezier(.19, 1, .22, 1);
+}
+
+[fade='up'] .api_content .downLoad,
+[fade='up'] .api_content .api_display,
+[fade='up'] .api_content .top {
+  opacity: 0;
+  transform: translateY(-7rem);
+}
+
+.visible .api_content .downLoad,
+.visible .api_content .api_display,
+.visible .api_content .top {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.visible .api_content .top {
+  transition-delay: .4s;
+}
+
+.visible .api_content .api_display {
+  transition-delay: .42s;
+}
+
+.visible .api_content .downLoad {
+  transition-delay: .5s;
+}
+
+#dialog_all_products {
+  width: 860px;
+}
+
+.dialog_body .api_display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}

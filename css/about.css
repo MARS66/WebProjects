@@ -1,0 +1,41 @@
+.about_content {
+  width: 767px;
+}
+
+.about_content p {
+  font-family: AlibabaPuHuiTi_2_35_Thin;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 1px;
+  white-space: pre-wrap;
+  color: #9ba5b1;
+}
+
+.about_content p,
+.about_content h3 {
+  opacity: 0;
+  transform: translateY(7rem);
+  transition: opacity .3s cubic-bezier(.445, .05, .55, .95), transform 1s cubic-bezier(.19, 1, .22, 1);
+}
+
+[fade='up'] .about_content p,
+[fade='up'] .about_content h3 {
+  opacity: 0;
+  transform: translateY(-7rem);
+}
+
+.visible .about_content p,
+.visible .about_content h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.visible .about_content h3 {
+  transition-delay: .4s;
+}
+
+.visible .about_content p {
+  transition-delay: .42s;
+}
