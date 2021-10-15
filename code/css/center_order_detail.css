@@ -1,0 +1,192 @@
+.gray_backgroud {
+  line-height: inherit;
+  padding: 1.8rem 0;
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.step {
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.step .step_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4rem;
+  white-space: nowrap;
+}
+
+.step .line {
+  flex: 1;
+  border-bottom: 0.2rem dotted #ff6600;
+  margin: 1.7rem 1rem;
+  position: relative;
+}
+
+.step .line::after {
+  font-family: "iconfont";
+  content: "\e640";
+  font-size: 1.2rem;
+  color: #ff6600;
+  font-weight: 600;
+  position: absolute;
+  right: -1rem;
+  bottom: -0.8rem;
+}
+
+.step .step_item .icon_box {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.step .step_item .icon_box .iconfont {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 0.7rem;
+  color: #dcdcdc;
+  line-height: 1rem;
+}
+
+.step .active .icon_box {
+  background-color: #ff66002c;
+}
+
+.step .finished .icon_box .iconfont,
+.step .active .icon_box .iconfont {
+  color: #fff;
+  background-color: #ff6600;
+}
+
+.response_table {
+  margin-top: 1.5rem;
+}
+
+.table {
+  border-top: none;
+  margin-bottom: 1.5rem;
+}
+
+.state {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.8rem;
+  color: #ff6a00;
+}
+
+.moment {
+  text-align: left;
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #4b4b4b;
+}
+
+.moment h3 {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4b4b4b;
+  padding-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  background-color: #FAFAFA;
+}
+
+table th,
+table td {
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+  font-weight: normal;
+  color: #434343;
+  padding: 1rem 1rem;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+}
+
+.address td {
+  vertical-align: top;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.product img {
+  height: 4.5rem;
+  padding: 0 1rem;
+}
+
+.total {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #ff6a00;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width:768px) {
+  article {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .response_table {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    padding: 0.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .step {
+    width: 50rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .table {
+    width: 50rem;
+    border: none;
+  }
+}

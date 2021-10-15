@@ -1,0 +1,113 @@
+.gray_backgroud {
+  line-height: inherit;
+  padding: 1.8rem 0;
+}
+
+.top_up_box {
+  margin-top: 1.5rem;
+  background-color: #F4F4F4;
+  padding: 0 1.25rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.top_up_box p {
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #F1F1F1;
+  padding-bottom: 1rem;
+}
+
+.operation {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.operation .money {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.operation .money input {
+  width: 9rem;
+  height: 2.8rem;
+  border: solid 0.05rem #dcdcdc;
+  margin: 0 0.5rem;
+}
+
+.check_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #434343;
+}
+
+.top_up {
+  width: 4rem;
+  height: 1.9rem;
+  background-color: #ff6a00;
+  border-radius: 0.2rem;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 0.7rem;
+  color: #ffffff;
+  margin-left: auto;
+}
+
+.check_list li {
+  width: 9rem;
+  height: 2.8rem;
+  border: solid 0.1rem #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.check_list li .iconfont {
+  font-size: 2rem;
+}
+
+.check_list li .icon-zhifubao {
+  color: #1478FF;
+}
+
+.check_list li .icon-weixinzhifu {
+  color: #1AAD17;
+}
+
+.check_list .choosed {
+  border-color: #ff6700;
+  position: relative;
+}
+
+.check_list .choosed::after {
+  font-family: "iconfont" !important;
+  content: "\e77c";
+  color: #ff6700;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -0.15rem;
+  right: -0.2rem;
+}
+
+@media screen and (max-width:768px) {
+  .operation {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .top_up {
+    margin: 0 auto;
+  }
+}

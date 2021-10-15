@@ -1,0 +1,68 @@
+.gray_backgroud {
+  padding: 1.8rem 0 4rem;
+  line-height: inherit;
+}
+
+.white {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.top_nav {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #434343;
+}
+
+.top_nav .continue {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #434343;
+}
+
+.pay_success {
+  padding: 1.5rem;
+}
+
+.pay_success_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 2rem 0;
+}
+
+.pay_success_info .iconfont {
+  font-size: 5rem;
+  margin-right: 1rem;
+  color: #83C44E;
+  padding-bottom: 1rem;
+}
+
+.pay_success_info h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #434343;
+  padding: 0.5rem 0;
+
+}
+
+.btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+}
+
+.btn_box a {
+  padding: 0 0.5rem;
+  color: #434343;
+}

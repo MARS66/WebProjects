@@ -1,0 +1,182 @@
+.gray_backgroud {
+  padding: 1.8rem 0 4rem;
+  line-height: inherit;
+}
+
+.white {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.top_nav {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #434343;
+}
+
+.top_nav .continue {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #434343;
+}
+
+.orderInfo {
+  padding: 2.8rem 2rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+}
+
+.orderInfo .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.orderInfo .top .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+.orderInfo .top .left .iconfont {
+  font-size: 5rem;
+  margin-right: 1rem;
+  color: #83C44E;
+}
+
+.orderInfo .total {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0rem;
+  color: #ff6a00;
+}
+
+.orderInfo .top .left .title {
+  font-family: MicrosoftYaHei;
+  font-size: 1.2rem;
+  color: #434343;
+  padding-bottom: 0.5rem;
+}
+
+.orderInfo .payer_info {
+  padding-top: 2rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.orderInfo .payer_info li {
+  padding: 0.25rem 0;
+  display: flex;
+}
+
+.orderInfo .payer_info li span:first-child {
+  flex-basis: 5rem;
+}
+
+.orderInfo .payer_info li span:last-child {
+  flex: 1;
+}
+
+.pay_item {
+  padding-bottom: 1.5rem;
+}
+
+.check_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #434343;
+}
+
+.check_list li {
+  width: 9rem;
+  height: 2.8rem;
+  border: solid 0.1rem #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.check_list li .iconfont {
+  font-size: 2rem;
+}
+
+.check_list li .icon-zhifubao {
+  color: #1478FF;
+}
+
+.check_list li .icon-weixinzhifu {
+  color: #1AAD17;
+}
+
+.check_list .choosed {
+  border-color: #ff6700;
+  position: relative;
+}
+
+.check_list .choosed::after {
+  font-family: "iconfont" !important;
+  content: "\e77c";
+  color: #ff6700;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -0.15rem;
+  right: -0.2rem;
+}
+
+h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+  padding: 1.5rem 0;
+}
+
+.btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #F5F5F5;
+}
+
+.btn_box button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #ff6700;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+  .orderInfo .top {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .orderInfo .top .right {
+    margin-left: 6rem;
+  }
+}

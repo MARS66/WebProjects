@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>东润</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/shopping_car.css">
+</head>
+<body>
+<!-- header -->
+  <header>
+    <!--顶部导航-->
+    <div class="site-topbar mobile_hidden">
+      <div class="container">
+        <!--顶部导航-->       
+        <div class="topbar-nav pull-left">
+          <a href="javascript:;">东润商城首页</a>
+          <span class="sep">|</span>
+          <a href="javascript:;">全场满88元顺丰包邮</a>
+        </div>
+        <!--购物车-->
+        <div class="topbar-cart pull-right">
+          <a href="javascript:;" class="btn cart">
+            <i class="iconfont icon-gouwuche"></i>
+            购物车(<span>0</span>)
+          </a>
+        </div>
+        <!--登入、注册-->           
+        <div class="topbar-user pull-right">
+          <a href="javascript:;">你好，请登录  免费注册  </a>
+          <span class="sep">|</span>
+          <a href="javascript:;">我的订单</a>
+        </div>
+      </div>
+    </div>
+    <!--页面header-->
+    <div class="site-header">
+      <div class="container">
+        <!--网站logo-->
+        <div class="header-logo">
+          <a href="javascript:;">
+            <img src="./images/logo.png">
+          </a>
+        </div>
+        <ul class="header-nav">                                                           
+          <li class="nav-item"><a class="link"  href="javascript:;">贵宾酒</a></li>
+          <li class="nav-item"><a class="link"  href="javascript:;">珍品一号</a></li>
+          <li class="nav-item"><a class="link"  href="javascript:;">华礼酒</a></li>
+          <li class="nav-item"><a class="link"  href="javascript:;">专柜</a></li>
+          <li class="nav-item"><a class="link"  href="javascript:;">其他品牌</a></li>
+        </ul>
+        <!--搜索框-->
+        <form>
+          <div class="search_input">
+            <input type="text" class="search-text" placeholder="国宾酒"/>
+            <a href="javascript:;" class="btn-search">
+              <i class="iconfont icon-fenxiang"></i>
+            </a>
+          </div>
+        </form>
+        <ul class="pc_hidden mobile_menu">
+          <li class="fist"></li>
+          <li class="second"></li>
+          <li class="third"></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+<!-- main -->
+<main class="gray_backgroud">
+  <div class="container">
+    <div class="top_nav white">
+      <span>我的购物车</span>
+      <a href="./index.html" class="continue">
+        <i class="iconfont icon-gouwuche"></i>
+        继续购物
+      </a>
+    </div>
+    <div class="white products_list">
+      <table>
+        <thead>
+         <tr>
+          <th>
+            <div class="checkAll"><span class="checkbox checked"></span>全选</div>
+          </th>
+          <th>商品名称</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>小计</th>
+          <th>操作</th>
+         </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="checkbox checked"></span></td>
+            <td>
+              <div class="product">
+                <img src="./images/wine.png" alt="">
+                <div>
+                  <p>钓鱼台 工匠酒酱香型白酒53度</p>
+                  <p>500ml 单瓶装</p>
+                </div>
+              </div>
+            </td>
+            <td>1299.00元</td>
+            <td>
+              <div class="input-number">
+                <span>-</span>
+                <input type="text" value="1">
+                <span>+</span>
+              </div>
+            </td>
+            <td>
+              <p class="price">2598.00元</p>
+            </td>
+            <td><button class="delete">×</button></td>
+          </tr>
+          <tr>
+            <td><span class="checkbox checked"></span></td>
+            <td>
+              <div class="product">
+                <img src="./images/wine.png" alt="">
+                <div>
+                  <p>钓鱼台 工匠酒酱香型白酒53度</p>
+                  <p>500ml 单瓶装</p>
+                </div>
+              </div>
+            </td>
+            <td>1299.00元</td>
+            <td>
+              <div class="input-number">
+                <span>-</span>
+                <input type="text" value="1">
+                <span>+</span>
+              </div>
+            </td>
+            <td>
+              <p class="price">2598.00元</p>
+            </td>
+            <td><button class="delete">×</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="total white"> 
+      <div class="left"> 
+        <div class="checkAll"><span class="checkbox checked"></span>全选</div>
+        <button class="mutile_delete">删除</button>
+        <span>共 <text>3 </text>件商品，已选择 <text>3 </text> 件</span>
+      </div>
+      <div class="right">
+        <span>合计：<text>3497.00</text><span style="color: #ff6700;">元</span></span>
+        <button class="submit">去结算</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <!-- footer -->
+  <div class="site-footer">
+    <div class="footer-box">
+      <div class="container footer-box-container">
+        <ul class="serive-list">
+          <li>
+            <a href="javascript:;">
+              <i class="iconfont icon-zhengpinbaozhang"></i>
+              官方正品
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="iconfont icon-kuaidi_1"></i>
+              顺丰极速达
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="iconfont icon-kuaidi"></i>
+              满88元包邮
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="iconfont icon-qitiantuihuan"></i>
+              7天无理由退货
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="iconfont icon-a-15"></i>
+              15天免费换货
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer-links">
+          <dl class="col-links">
+            <dt>帮助中心</dt>
+            <dd><a href="javascript:;">售后服务条款</a></dd>
+            <dd><a href="javascript:;">常见问题</a></dd>
+            <dd><a href="javascript:;">支付方式</a></dd>
+            <dd><a href="javascript:;">物流方式</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>关于东润商城</dt>
+            <dd><a href="javascript:;">东润商城简介</a></dd>
+            <dd><a href="javascript:;">东润商城新闻</a></dd>
+            <dd><a href="javascript:;">会员权益</a></dd>
+            <dd><a href="javascript:;">联系我们</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>关注更多社交媒体</dt>
+            <dd><a href="javascript:;">官方微信</a></dd>
+            <dd><a href="javascript:;">新浪微博</a></dd>
+            <dd><a href="javascript:;">抖音</a></dd>
+          </dl>
+          <div class="col-contact">
+            <div>
+              <p>东润商城官方微信</p>
+              <img src="./images/scancode.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <div class="good_inks">
+            <ul> 
+              <li>友情链接：</li>
+              <li><a href="javascript:;">纵腾集团 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">谷仓海外仓 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">云途物流 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">跨呗金融 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">VAT注册 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">创蓝论坛 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">Payoneer中国区官网 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">卖家精灵 </a></li>
+              <li> |  </li>
+              <li><a href="javascript:;">鸥鹭选品 </a></li>
+            </ul>
+          <p>© 2018-2021 东润商城有限公司 版权所有   |   京ICP备2021026044号</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

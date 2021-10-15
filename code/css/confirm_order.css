@@ -1,0 +1,433 @@
+.gray_backgroud {
+  padding: 1.8rem 0 4rem;
+  line-height: inherit;
+}
+
+.white {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.top_nav {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #434343;
+}
+
+.top_nav .continue {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #434343;
+}
+
+
+.checkAll {
+  display: flex;
+  align-items: center;
+}
+
+.checked {
+  color: #fff;
+  background-color: #ff6700;
+  border-color: #ff6700;
+}
+
+.top_nav .continue:hover,
+.price {
+  color: #ff6700;
+
+}
+
+table {
+  width: 100%;
+}
+
+table th,
+td {
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #434343;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+  padding: 1.5rem 0;
+}
+
+.products_list {
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #434343;
+}
+
+.product {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: start;
+}
+
+.product img {
+  height: 4.5rem;
+}
+
+.delete {
+  background: none;
+  font-size: 1.2rem;
+}
+
+.mutile_delete:hover,
+.delete:hover {
+  color: red;
+}
+
+.input-number {
+  margin: 0 auto;
+  width: 7rem;
+  height: 2.2rem;
+  border: solid 0.05rem #e0e0e0;
+  display: flex;
+}
+
+.input-number span {
+  width: 2.15rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.input-number span:hover {
+  color: #ff6700;
+  cursor: pointer;
+}
+
+.input-number input {
+  flex: 1;
+  width: 1px;
+  border-left: solid 0.05rem #e0e0e0;
+  border-right: solid 0.05rem #e0e0e0;
+}
+
+.total {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.total span {
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.total .right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.total .left textarea {
+  width: 18rem;
+  height: 2.5rem;
+  border: solid 1px #e0e0e0;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.total .right text {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0rem;
+  color: #ff6a00;
+}
+
+.submit {
+  background-color: #ff6700;
+  width: 9rem;
+  height: 2.2rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #ffffff;
+
+}
+
+.total_info {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+}
+
+.total_info li span:last-child {
+  display: inline-block;
+  text-align: end;
+  width: 5rem;
+}
+
+.total_info .label {
+  text-align: end;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+  font-family: MicrosoftYaHei;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+
+.address li {
+  width: 14rem;
+  height: 9rem;
+  border: solid 0.05rem #d2d2d2;
+  padding: 1.2rem;
+}
+
+.address .default {
+  border-color: #ff6700;
+}
+
+.address h5 {
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.1rem;
+  color: #313131;
+  padding-bottom: 0.3rem;
+}
+
+.address p {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.1rem;
+  letter-spacing: 0rem;
+  color: #7d7d7d;
+  padding-bottom: 0.3rem;
+}
+
+.address_operate {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7d7d7d;
+}
+
+.address_operate a {
+  padding: 0 0.3rem;
+}
+
+.address .add {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.address .add:hover .iconfont,
+.address .add:hover {
+  color: #ff6700;
+}
+
+.address .add .iconfont {
+  font-size: 2rem;
+  color: #D3D3D3;
+  padding-bottom: 0.3rem;
+}
+
+.pay_item {
+  padding-bottom: 1.5rem;
+}
+
+.check_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #434343;
+}
+
+.check_list li {
+  width: 9rem;
+  height: 2.8rem;
+  border: solid 0.1rem #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.check_list li .iconfont {
+  font-size: 2rem;
+}
+
+.check_list li .icon-zhifubao {
+  color: #1478FF;
+}
+
+.check_list li .icon-weixinzhifu {
+  color: #1AAD17;
+}
+
+.check_list .choosed {
+  border-color: #ff6700;
+  position: relative;
+}
+
+.check_list .choosed::after {
+  font-family: "iconfont" !important;
+  content: "\e77c";
+  color: #ff6700;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -0.15rem;
+  right: -0.2rem;
+}
+
+.delivery_type li {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: #434343;
+}
+
+
+.payment p {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: #7d7d7d;
+  padding-bottom: 1rem;
+}
+
+.coupon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.coupon li {
+  width: 14rem;
+  height: 7.5rem;
+  background-color: #ff6700;
+  padding: 0.85rem 1.25rem;
+}
+
+.coupon .size {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.coupon .size span {
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.coupon .size text {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+
+.coupon .yellow {
+  height: 1.3rem;
+  background-color: #fff799;
+  border-radius: 0.625rem;
+  text-align: center;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  color: #434343;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 1rem 0 0;
+}
+
+.coupon .time {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width:768px) {
+  .products_list {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 50rem;
+  }
+
+
+  .total .right,
+  .total {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .total .left textarea {
+    height: 4rem;
+  }
+}

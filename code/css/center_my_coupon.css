@@ -1,0 +1,77 @@
+.gray_backgroud {
+  line-height: inherit;
+  padding: 1.8rem 0;
+  min-height: 30rem;
+}
+
+
+.coupon {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.not_top {
+
+  margin-top: 0;
+}
+
+.coupon li {
+  width: 14rem;
+  height: 7.5rem;
+  background-color: #ff6700;
+  padding: 0.85rem 1.25rem;
+}
+
+.coupon .size {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.coupon .size span {
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.coupon .size text {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+
+.coupon .yellow {
+  height: 1.3rem;
+  background-color: #fff799;
+  border-radius: 0.625rem;
+  text-align: center;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  color: #434343;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 1rem 0 0;
+}
+
+.coupon .time {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width:768px) {
+  .coupon li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+.gray_backgroud {
+  line-height: inherit;
+  padding: 1.8rem 0;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.center_layout article .top_title .search_input input {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0rem;
+  color: #d2d2d2
+}
+
+.response_table {
+  margin-top: 1.5rem;
+}
+
+.table {
+  border: solid 1px #dcdcdc;
+  margin-bottom: 1rem;
+}
+
+.table_title {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.5rem;
+  background-color: #FAFAFA;
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+  color: #4b4b4b;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  color: #434343;
+  padding: 1rem 1rem;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  border-bottom: none;
+}
+
+table td:nth-child(1),
+table td:nth-child(2),
+table td:nth-child(3) {
+  border: none;
+  border-top: 1px solid #dcdcdc;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.product img {
+  height: 4.5rem;
+  padding: 0 1rem;
+}
+
+table td .price {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  color: #ff6a00;
+}
+
+table .operate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table .operate button {
+  background: none;
+  width: 3.65rem;
+  height: 1.4rem;
+  margin-top: 0.3rem;
+  border: solid 0.05rem #dcdcdc;
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+}
+
+table .operate button:hover,
+table .operate .blue {
+  border-color: #4497fe;
+  color: #4497fe;
+}
+
+@media screen and (max-width:768px) {
+  article {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .response_table {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+  }
+
+  table {
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  .table {
+    width: 50rem;
+    border: none;
+  }
+}

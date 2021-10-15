@@ -1,0 +1,130 @@
+.gray_backgroud {
+  line-height: inherit;
+  padding: 1.8rem 0;
+}
+
+.wallet_box {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+}
+
+.wallet_box .right,
+.wallet_box .left {
+  display: flex;
+  align-items: center;
+}
+
+.wallet_box .right button {
+  width: 4rem;
+  height: 1.9rem;
+  background-color: #434343;
+  border-radius: 0.2rem;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.wallet_box .right .withdraw {
+  margin-left: 1rem;
+  background-color: #ff6700;
+}
+
+.wallet_box .left span {
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1rem;
+  letter-spacing: 0rem;
+  color: #4b4b4b;
+}
+
+.wallet_box .left span:first-child {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid #E5E5E5;
+}
+
+.wallet_box .left .intergral {
+  border: none !important;
+}
+
+.wallet_box .left span .iconfont {
+  font-size: 2rem;
+  margin-right: 0.3rem;
+}
+
+.response_table {
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  background-color: #F4F4F4;
+}
+
+table td,
+table th {
+  padding: 0.8rem 1rem;
+  font-weight: normal;
+  border: solid 1px #dcdcdc;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  letter-spacing: 0rem;
+  color: #4b4b4b;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.center_layout article .top_title .search_input input {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0rem;
+  color: #d2d2d2
+}
+
+@media screen and (max-width:768px) {
+  article {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .response_table {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+  }
+
+  table {
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  .table {
+    width: 40rem;
+    border: none;
+  }
+
+  .wallet_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wallet_box .right {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,135 @@
+.center_layout {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.center_layout aside {
+  width: 12rem;
+}
+
+.center_layout article {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* left */
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  background-color: #ff6700;
+}
+
+.avatar .avatar_box {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.avatar img {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar .name {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.center_layout article .top_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.top_title .icon-caidan {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.top_title .left {
+  font-family: MicrosoftYaHei;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.65rem;
+  letter-spacing: 0rem;
+  color: #434343;
+  display: flex;
+  align-items: center;
+}
+
+.center_menu {
+  padding: 1rem;
+}
+
+.center_menu .leaval_1 {
+  height: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 0.975rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  color: #434343;
+  padding: 0 0.8rem;
+}
+
+.center_menu .leaval_1 .iconfont {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+.center_menu .leaval_2 {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.65rem;
+  letter-spacing: 0rem;
+  color: #ff6a00;
+  padding: 0.5rem 2rem;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+@media screen and (max-width:768px) {
+
+  .center_layout article {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .center_layout aside {
+    display: none;
+    position: absolute;
+    top: 3.8rem;
+    left: 0;
+    border: 1px solid #dcdcdc;
+    z-index: 10;
+  }
+
+  .center_layout aside .center_menu {
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+}
