@@ -1,0 +1,80 @@
+.table {
+  border-top: none;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+}
+
+table th {
+  background-color: #FAFAFA;
+}
+
+table th,
+table td {
+  font-family: MicrosoftYaHei;
+  font-size: 0.6rem;
+  font-weight: normal;
+  color: #434343;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.address td {
+  vertical-align: top;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.product img {
+  height: 4.5rem;
+  padding: 0 1rem;
+}
+
+table button {
+  background: none;
+}
+
+table button:hover {
+  color: #ff6700;
+}
+
+table .pass {
+  color: #80c269;
+}
+
+@media screen and (max-width:768px) {
+  article {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .response_table {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+  }
+
+  table {
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  .table {
+    width: 50rem;
+    border: none;
+  }
+}

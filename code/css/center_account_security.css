@@ -1,0 +1,79 @@
+.security {
+  padding: 1rem 0;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  color: #4b4b4b;
+}
+
+.top_label {
+  display: flex;
+  align-items: center;
+
+}
+
+.line {
+  padding: 0 1rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  letter-spacing: 0rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.form li {
+  padding: 0.7rem 0;
+  display: flex;
+}
+
+.label {
+  display: inline-block;
+  width: 5.3rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.form input {
+  width: 13rem;
+  height: 2.5rem;
+  background-color: #f9f9f9;
+  border-radius: 0.3rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn button {
+  width: 13rem;
+  height: 2.5rem;
+  background-color: #ff5c00;
+  border-radius: 0.3rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.getcode {
+  display: flex;
+  align-items: center;
+  width: 13rem;
+  height: 2.5rem;
+  background-color: #f9f9f9;
+  border-radius: 0.3rem;
+}
+
+.getcode span {
+
+  padding: 0 0.9rem;
+}
+
+.form .getcode input {
+  flex: 1;
+  width: 1rem;
+}

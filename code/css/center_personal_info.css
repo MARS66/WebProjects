@@ -1,0 +1,46 @@
+.personal {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  color: #4b4b4b;
+}
+
+.label {
+  width: 4rem;
+}
+
+.personal li {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.content {
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.btn {
+  justify-content: flex-end;
+}
+
+.btn button {
+  width: 13rem;
+  height: 2.5rem;
+  background-color: #ff5c00;
+  border-radius: 0.3rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  color: #ffffff;
+}

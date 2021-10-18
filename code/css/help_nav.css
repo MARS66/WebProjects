@@ -1,0 +1,75 @@
+aside {
+  min-height: 800px;
+}
+
+.group .title {
+  height: 2.5rem;
+  background-color: #ff6700;
+  line-height: 2.5rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+  padding: 0 0.7rem;
+}
+
+.group .iconfont {
+  margin-right: 0.3rem;
+}
+
+.help_nav {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.65rem;
+  letter-spacing: 0rem;
+  color: #ff5c00;
+  padding: 0.3rem 2rem 1rem;
+}
+
+.help_nav .active a {
+  color: #ff6700;
+}
+
+.help_nav li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help_nav li:hover::after,
+.help_nav .active::after {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.15rem;
+  background-color: #ff6700;
+}
+
+.content {
+  padding: 1rem 0;
+}
+
+.content p {
+  text-align: justify;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  white-space: pre-wrap;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.1rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+@media screen and (max-width:768px) {
+  aside {
+    min-height: unset;
+    height: 50vh;
+    overflow-y: auto;
+  }
+}

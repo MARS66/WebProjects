@@ -1,3 +1,8 @@
+.gray_backgroud {
+  line-height: inherit;
+  padding: 1.8rem 0;
+}
+
 .center_layout {
   display: flex;
   gap: 1rem;

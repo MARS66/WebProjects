@@ -1,0 +1,110 @@
+.news_title {
+  text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.news_title h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.65rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.news_title p {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #a0a0a0;
+  padding: 1rem 0 2rem;
+}
+
+.content img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+.share {
+  margin-top: 3rem;
+  height: 5.7rem;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.9rem;
+  letter-spacing: 0rem;
+  color: #313131;
+}
+
+.share .iconfont {
+  cursor: pointer;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  background-color: #eeeeee;
+  border-radius: 0.5rem;
+  margin-right: 0.7rem;
+}
+
+.share .iconfont:hover {
+  color: #fff;
+  background-color: #ff6700;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #313131;
+}
+
+.btns .prev div a,
+.btns .next div a {
+  display: block;
+  margin: 0 0.7rem;
+}
+
+.btns .next div a {
+  text-align: right;
+}
+
+.new_name {
+  line-height: 1rem;
+}
+
+.btns>div {
+  display: flex;
+}
+
+.btns .btn {
+  width: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #666;
+  color: #fff;
+}
+
+.btns .btn:hover {
+  background-color: #ff6700;
+}

@@ -1,0 +1,80 @@
+.news li {
+  display: flex;
+  padding: 2rem 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.news li .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3.5rem;
+}
+
+.news li .time p {
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-stretch: normal;
+  line-height: 1rem;
+  letter-spacing: 0rem;
+  color: #a8a8a8;
+  text-align: center;
+}
+
+.news li .time span {
+  white-space: nowrap;
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #8f8f8f;
+}
+
+.news li img {
+  width: 10rem;
+  max-height: 7.5rem;
+  object-fit: cover;
+  margin: 0 2rem;
+}
+
+.news li .info {
+  flex: 1;
+}
+
+.news li .info h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.news li .info p {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1rem;
+  letter-spacing: 0rem;
+  color: #878787;
+  padding: 1rem 0 2rem;
+}
+
+.news li .info a {
+
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+}
+
+.pagination {
+  margin: 2rem 0;
+  justify-content: center;
+}

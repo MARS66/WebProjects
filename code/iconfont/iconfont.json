@@ -6,6 +6,27 @@
   "description": "电商",
   "glyphs": [
     {
+      "icon_id": "4936987",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e882",
+      "unicode_decimal": 59522
+    },
+    {
+      "icon_id": "15559654",
+      "name": "空间",
+      "font_class": "shejiaotubiao-04",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "5387921",
+      "name": "箭头_上一页_o",
+      "font_class": "jiantou_shangyiye_o",
+      "unicode": "eb8e",
+      "unicode_decimal": 60302
+    },
+    {
       "icon_id": "1963492",
       "name": "支付方式",
       "font_class": "zhifufangshi",
