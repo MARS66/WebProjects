@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "22452824",
+      "name": "形状 30",
+      "font_class": "a-xingzhuang30",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "5171732",
+      "name": "快递",
+      "font_class": "kuaidi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5171816",
+      "name": "快递",
+      "font_class": "kuaidi_",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "15991008",
+      "name": "货车",
+      "font_class": "huoche",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "18166109",
+      "name": "快递包裹,箱子",
+      "font_class": "express-package-full",
+      "unicode": "e8b6",
+      "unicode_decimal": 59574
+    },
+    {
+      "icon_id": "689303",
+      "name": "物流 卡车2",
+      "font_class": "wuliuqiache2",
+      "unicode": "e821",
+      "unicode_decimal": 59425
+    },
+    {
+      "icon_id": "7579916",
+      "name": "审核",
+      "font_class": "shenhe",
+      "unicode": "e727",
+      "unicode_decimal": 59175
+    },
+    {
+      "icon_id": "16158855",
+      "name": "出库管理",
+      "font_class": "chukuguanli",
+      "unicode": "e7e9",
+      "unicode_decimal": 59369
+    },
+    {
+      "icon_id": "19105814",
+      "name": "扫码-big",
+      "font_class": "saoma-big",
+      "unicode": "e773",
+      "unicode_decimal": 59251
+    },
+    {
+      "icon_id": "22452821",
+      "name": "zhangzi",
+      "font_class": "a-xingzhuang2-2",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
       "icon_id": "947488",
       "name": "消息",
       "font_class": "xiaoxi",

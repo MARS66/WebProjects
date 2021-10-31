@@ -1,0 +1,35 @@
+table td{
+  border: unset;
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+table td .btns button{
+  width: 6.05rem;
+	height: 1.75rem;
+	border-radius: 0.5rem;
+}
+table td .btns button:hover,
+table td .btns .active{
+	background-color: #d34b0d;
+  color: #ffffff;
+}
+table td .btns button:not(:last-child){
+  margin-bottom: 0.3rem;
+}
+table  .border_r{
+  border-left: 1px solid #eeeeee;
+}
+.table_response{
+  margin: 1rem 0;
+}
+.pagination{
+  margin-top: 0;
+}
+table td .product{
+  max-width: 28rem;
+}
+@media screen and (max-width: 768px){
+.table_response .table {
+    width: 40rem
+}
+}

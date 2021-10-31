@@ -63,3 +63,11 @@ $('.checkbox').click(function () {
     $(this).addClass('checked')
   }
 })
+// 复选框
+$('.radio').click(function () {
+  if ($(this).hasClass('radioed')) {
+    $(this).removeClass('radioed')
+  } else {
+    $(this).addClass('radioed')
+  }
+})

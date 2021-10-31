@@ -1,0 +1,67 @@
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 0;
+}
+.pay{
+  box-sizing: border-box;
+  width: 26.5rem;
+	background-color: #ffffff;
+	border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pay>img{
+  margin-bottom: 2.5rem;
+}
+.pay .tips{
+  margin-bottom: 4rem;
+}
+.pay .tips p{
+  font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.8rem;
+	letter-spacing: 0.04rem;
+	color: #5f5f5f;
+}
+.pay .tips div{
+  text-align: center;
+  font-size: 1rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.8rem;
+	letter-spacing: 0.05rem;
+	color: #d34b0d;
+}
+.pay button{
+  width: 100%;
+  height: 3.5rem;
+	background-color: #d34b0d;
+	border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.pay>a{
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+	font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.8rem;
+	letter-spacing: 0.04rem;
+	color: #000000;
+}
+@media screen and (max-width:768px) {
+  main{
+    padding: 15px;
+  }
+  .pay{
+    width: 100%;
+  }
+}

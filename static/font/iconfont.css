@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2890354 */
-  src: url('iconfont.woff2?t=1635487460809') format('woff2'),
-       url('iconfont.woff?t=1635487460809') format('woff'),
-       url('iconfont.ttf?t=1635487460809') format('truetype');
+  src: url('iconfont.woff2?t=1635649613256') format('woff2'),
+       url('iconfont.woff?t=1635649613256') format('woff'),
+       url('iconfont.ttf?t=1635649613256') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,46 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-a-xingzhuang30:before {
+  content: "\e623";
+}
+
+.icon-kuaidi:before {
+  content: "\e606";
+}
+
+.icon-kuaidi_:before {
+  content: "\e627";
+}
+
+.icon-huoche:before {
+  content: "\e629";
+}
+
+.icon-express-package-full:before {
+  content: "\e8b6";
+}
+
+.icon-wuliuqiache2:before {
+  content: "\e821";
+}
+
+.icon-shenhe:before {
+  content: "\e727";
+}
+
+.icon-chukuguanli:before {
+  content: "\e7e9";
+}
+
+.icon-saoma-big:before {
+  content: "\e773";
+}
+
+.icon-a-xingzhuang2-2:before {
+  content: "\e620";
 }
 
 .icon-xiaoxi:before {

@@ -1,0 +1,103 @@
+.comment{
+  margin: 2rem 0;
+}
+.comment p{
+  font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.2rem;
+	letter-spacing: 0rem;
+	color: #000000;
+}
+.grade{
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 2.6rem 0;
+}
+.grade li{
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  color: #a3a3a3;
+}
+.grade .active{
+
+  color: #d34b0d;
+}
+.comment input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.2rem;
+  height: 7.75rem;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border: solid 0.05rem #e5e5e5;
+  font-size: 0.7rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.2rem;
+	letter-spacing: 0rem;
+	color: #5f5f5f;
+  
+  margin: 1rem 0 2.6rem 0;
+}
+.comment input:focus{
+  outline: none;
+}
+.comment .files{
+  padding: 1rem 0 2.6rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.comment .files li{
+  margin-right: 1rem;
+}
+.comment .files li{
+  width: 5rem;
+	height: 5rem;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border: solid 0.05rem #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comment .files li img{
+  object-fit: cover;
+}
+.comment .files .iconfont::before{
+  font-size: 1.4rem;
+  color: #838181;
+}
+.comment .submit{
+  width: 9.5rem;
+	height: 2.75rem;
+	background-color: #d34b0d;
+	border-radius: 0.5rem;
+  font-size: 0.7rem;
+	color: #ffffff;
+  margin-bottom: 2rem;
+}
+table td{
+  border: unset;
+  padding: 0.5rem 1.5rem;
+}
+table td .btns button{
+  width: 6.05rem;
+	height: 1.75rem;
+	border-radius: 0.5rem;
+}
+table td .btns button:hover,
+table td .btns .active{
+	background-color: #d34b0d;
+  color: #ffffff;
+}
+table td .btns button:not(:last-child){
+  margin-bottom: 0.3rem;
+}
+table  .border_r{
+  border-left: 1px solid #eeeeee;
+}
+table{
+  padding: 2rem 0;
+}

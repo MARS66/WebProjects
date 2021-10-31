@@ -1,0 +1,293 @@
+
+.item h3{
+  padding: 0 1.3rem ;
+  height: 3rem;
+  margin: 1rem 0;
+  line-height: 3rem;
+	background-color: #f7f7f7;
+	border-radius: 0.5rem;
+  font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.04rem;
+	color: #000000;
+}
+.address_box{
+  display: flex;
+  padding: 1rem 0;
+}
+.address_box form{
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-right: 4rem;
+  gap: 1rem 1.5rem;
+  align-content: flex-start;
+}
+.address_box form button{
+  width: 12.5rem;
+	height: 2.5rem;
+	background-color: #d34b0d;
+	border-radius: 0.5rem;
+	border: solid 0.05rem #e5e5e5;
+  font-size: 0.7rem;
+	letter-spacing: 0.035rem;
+	color: #ffffff;
+  margin-top: 2rem;
+}
+.address_box form .input{
+  padding: 0 1.4rem;
+  height: 2.5rem;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border: solid 0.05rem #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+.address_box form .input input{
+  flex: 1;
+  border: none;
+}
+.address_box form .label{
+  font-size: 0.7rem;
+	letter-spacing: 0.035rem;
+	color: #5f5f5f;
+}
+.select .iconfont{
+  font-size: 0.5rem;
+  transform: scale(0.8);
+  color: #d2d2d2;
+}
+.address_box .left{
+  width: 20.6rem;
+  padding-left: 2.45rem;
+  border-left: 1px solid #eeeeee;
+}
+.address_box .left .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.address_box .left .title span{
+  width: 7rem;
+	height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+	background-color: #d34b0d;
+	border-radius: 0.5rem;
+  font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.035rem;
+	color: #f7f7f7;
+}
+.address_box .left .title  a{
+  font-size: 0.8rem;
+  margin-right: 0.rem;
+  cursor: pointer;
+}
+.address_history li .name_box a:hover,
+.address_box .left .title  a:hover{
+  color: #d34b0d;
+}
+.address_history li{
+  margin-top: 1rem;
+  padding: 1rem;
+	background-color: #f7f7f7;
+	border-radius: 0.5rem;
+  font-family: MicrosoftYaHei;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.035rem;
+	color: #000000;
+}
+.address_history li .name_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.address_history li .name_box a{
+  padding: 0 0.3rem;
+}
+.address_history li  .address{
+  color: #5f5f5f;
+  margin-top: 0.5rem;
+}
+.pay_types{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 2rem 0;
+}
+.pay_types>li{
+  width: 6.5rem;
+	height: 2.3rem;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border: solid 0.05rem transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.pay_types>.checked{
+  border-color: #d34b0d;
+}
+.pay_types>li img{
+  height: 1.1rem;
+  margin-right: 1rem;
+}
+.deliverys{
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+.deliverys>li{
+  display: flex;
+  align-items: center;
+	line-height: 2.4rem;
+	letter-spacing: 0.035rem;
+	color: #000000;
+}
+.deliverys>.active{
+  color: #d34b0d;
+}
+.deliverys>li .name{
+  max-width: 12rem;
+  margin: 0 2rem;
+  font-size: 0.7rem;
+  flex: 1;
+}
+.price{
+  font-size: 0.7rem;
+	font-weight: 600;
+}
+.checkbox{
+  width: 1.25rem;
+	height: 1.25rem;
+  border-color: #d34b0d;
+	border-radius: 0.5rem;
+}
+.checked{
+  background-color: #d34b0d;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.discount .input{
+  width: 19rem;
+	height: 3rem;
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border: solid 0.05rem #e5e5e5;
+  display: flex;
+  align-items: center;
+  padding: 0 1.4rem;
+}
+.discount .input input{
+  flex: 1;
+  border: unset;
+}
+.discount .select{
+  width: 19rem;
+	height: 3rem;
+	background-color: #ffffff;
+  margin: 0 1.5rem;
+}
+.select .select_input{
+  height: 100%;
+}
+.select .options{
+  top: 3.5rem;
+}
+.discount p{
+  font-size: 0.7rem;
+	letter-spacing: 0.035rem;
+	color: #5f5f5f;
+}
+.discount p a{
+  text-decoration: underline;
+  font-weight: normal;
+	color: #000000;
+}
+.radio_box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.radio_box p{
+  flex: 1;
+  font-size: 0.7rem;
+	letter-spacing: 0.035rem;
+	color: #5f5f5f;
+}
+.sum{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.7rem;
+}
+.sum .label{
+  display: inline-block;
+  width: 5rem;
+  margin-right: 4rem;
+  font-size: 0.7rem;
+	line-height: 1.8rem;
+	letter-spacing: 0.035rem;
+	color: #5f5f5f;
+}
+.sum .total{
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.sum .total .label{
+  color: #000;
+  font-size: 0.9rem;
+}
+.sum .submit{
+  margin: 3rem 0;
+  width: 15rem;
+	height: 3rem;
+	background-color: #d34b0d;
+	border-radius: 0.5rem;
+  font-size: 1rem;
+	color: #ffffff;
+}
+@media screen and (max-width:768px) {
+  .address_box{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .select .select_input{
+    height: 2.5rem;
+  }
+  .address_box form{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-right: 0;
+    gap: 1rem 1.5rem;
+    align-content: flex-start;
+    margin-bottom: 2rem;
+  }
+  .address_box .left{
+    padding: 0;
+    border-left: unset;
+    width: auto;
+  }
+  .discount {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .discount .select{
+    margin: 1rem 0;
+    width: 100%;
+    height: 3rem;
+  }
+  .discount .select_input{
+    height: 3rem;
+  }
+  .discount .input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
