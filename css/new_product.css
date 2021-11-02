@@ -1,0 +1,132 @@
+.news_fenlei {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+}
+
+.news_fenlei li {
+  margin-right: 3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  color: #000000;
+}
+
+.news_fenlei .active {
+  color: #d34b0d;
+}
+
+
+.cabinet {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem 0.5rem;
+}
+
+.cabinet li {
+  box-sizing: border-box;
+  height: 20rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: solid 0.05rem #eeeeee;
+  padding: 2rem 1.7rem;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.cabinet li .type {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: end;
+  padding: 0.3rem;
+  background-color: var(--lh);
+  color: #ffffff;
+  font-size: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.cabinet li .img_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabinet li .img_box img {
+  max-width: 100%;
+  max-height: 8.15rem;
+}
+
+.cabinet li .info {
+  padding: 2rem 1.7rem 0;
+  position: absolute;
+  bottom: 1.7rem;
+  left: 0;
+  transition: all ease 0.3s;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cabinet li .info .price {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #ff4202;
+  padding: 1rem 0;
+}
+
+.cabinet li .info button {
+  width: 100%;
+  background-color: #d34b0d;
+  border-radius: 0.25rem;
+  color: #fff;
+  transition: all ease 0.3s;
+  height: 0;
+  opacity: 0;
+}
+
+.cabinet li:hover .info button {
+  display: block;
+  height: 2.25rem;
+  opacity: 1
+}
+
+@media screen and (max-width:768px) {
+  .cabinet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.25rem;
+  }
+
+  .news_fenlei {
+    padding: 1rem;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .news_fenlei li {
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+  }
+}

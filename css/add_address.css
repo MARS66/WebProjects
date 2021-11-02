@@ -1,0 +1,73 @@
+.add_address {
+  padding: 2rem 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 4rem;
+  gap: 1rem 1.5rem;
+  align-content: flex-start;
+}
+
+.add_address form button {
+  width: 12.5rem;
+  height: 2.5rem;
+  background-color: #d34b0d;
+  border-radius: 0.5rem;
+  border: solid 0.05rem #e5e5e5;
+  font-size: 0.7rem;
+  letter-spacing: 0.035rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.add_address .select_input,
+.add_address .input {
+  padding: 0 1.4rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: solid 0.05rem #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.add_address .input input {
+  flex: 1;
+  border: none;
+}
+
+.add_address .label {
+  font-size: 0.7rem;
+  letter-spacing: 0.035rem;
+  color: #5f5f5f;
+}
+
+.select .iconfont {
+  font-size: 0.5rem;
+  transform: scale(0.8);
+  color: #d2d2d2;
+}
+
+.add_address .submit {
+  margin: 2rem 0;
+  width: 15rem;
+  height: 3rem;
+  background-color: #d34b0d;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.select .options {
+  top: 2.6rem;
+}
+
+@media screen and (max-width:768px) {
+  .add_address {
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 0;
+    gap: 1rem 1.5rem;
+    align-content: flex-start;
+    margin-bottom: 2rem;
+  }
+}

@@ -370,6 +370,10 @@
   text-decoration: line-through;
 }
 
+.classification .leaval2 {
+  display: block;
+}
+
 @media screen and (max-width:768px) {
   .swiper_box {
     margin-top: 0.45rem;
@@ -434,4 +438,9 @@
   .swiper-button-next {
     transform: scale(0.8);
   }
+
+  .classification .leaval2 {
+    display: none;
+  }
+
 }

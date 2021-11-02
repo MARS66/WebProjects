@@ -1,0 +1,79 @@
+.item {
+  padding-bottom: 2.6rem;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 2.6rem;
+}
+
+.profession_info {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.profession {
+  width: 6rem;
+  height: 1.75rem;
+  text-align: center;
+  line-height: 1.75rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: solid 0.05rem #d34b0d;
+  font-size: 0.8rem;
+  letter-spacing: 0.04rem;
+  color: #d34b0d;
+}
+
+.profession_info>div {
+  flex: 1;
+}
+
+.profession_info .line {
+  width: 0.05rem;
+  margin: 0 4rem;
+  background-color: #eeeeee;
+}
+
+.profession_info h4 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.035rem;
+  color: #5f5f5f;
+  margin-bottom: 1.5rem;
+}
+
+.profession_info p {
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 0.035rem;
+  color: #5f5f5f;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+.btns button {
+  width: 6rem;
+  height: 1.75rem;
+  background-color: #d34b0d;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+  .profession_info {
+    flex-direction: column;
+  }
+
+  .profession_info .line {
+    height: 0.05rem;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: #eeeeee;
+  }
+}

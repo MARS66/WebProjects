@@ -1,0 +1,29 @@
+.table_response {
+  margin: 1rem 0;
+}
+
+.table td {
+  padding: 1.5rem 2rem;
+}
+
+table td .btns button {
+  width: 6.05rem;
+  height: 1.75rem;
+  border-radius: 0.5rem;
+}
+
+table td .btns button:hover,
+table td .btns .active {
+  background-color: #d34b0d;
+  color: #ffffff;
+}
+
+table td .btns button:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width:768px) {
+  .table_response .table {
+    width: 40rem;
+  }
+}

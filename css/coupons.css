@@ -1,0 +1,99 @@
+.coupon_nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.04rem;
+  color: #000000
+}
+
+.coupon_nav li {
+  margin-right: 1.5rem;
+}
+
+.coupon_nav li:hover,
+.coupon_nav .active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.coupons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+.coupons li {
+  box-sizing: border-box;
+  width: 258px;
+  height: 110px;
+  background-image: url(../static/images/coupun.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coupons li .num {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 2.443rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0.12rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.coupons li .name {
+  font-size: 1.693rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0.01rem;
+  line-height: 2.443rem;
+  color: #ffffff;
+  margin-left: -0.5rem;
+}
+
+.coupons li .num .unit {
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.841rem;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #F85161;
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.5rem;
+}
+
+.coupons li p {
+  width: 8.4rem;
+  height: 1.05rem;
+  background-color: #ffffff;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.6rem;
+  color: #fb546b;
+  text-align: center;
+  line-height: 1.05rem;
+}
+
+@media screen and (max-width:768px) {
+  .coupons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: flex-start;
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .coupons li p {
+    width: 10rem;
+  }
+}

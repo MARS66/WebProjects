@@ -3,6 +3,32 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+
+  width: 4px;
+  height: 1px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px #d34b0d;
+  -webkit-box-shadow: inset 0 0 5px #d34b0d;
+  background: #d34b0d;
+
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px #ebebeb;
+  -webkit-box-shadow: inset 0 0 5px #ebebeb;
+  border-radius: 4px;
+  background: #ebebeb;
+
+}
+
 :root {
   --lh: #d34b0d
 }
