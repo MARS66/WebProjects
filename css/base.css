@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+:root {
+  --theme: #ff6c20;
+  --theme2: #ff0000;
+}
+
+html {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--theme);
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+textarea:focus,
+select:focus,
+select:focus-visible,
+input:active,
+input:focus,
+button:active,
+button:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pc_hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 1257px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1547px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .pc_hidden {
+    display: block;
+  }
+
+  .mobile_menu {
+    width: 2rem;
+    height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 20;
+  }
+
+  .mobile_menu li {
+    width: 100%;
+    height: 0.15rem;
+    border-radius: 0.1rem;
+    background-color: var(--theme);
+    transition: transform ease 0.3s;
+    transform-origin: right;
+  }
+
+  .menuActive .fist {
+    transform: rotate(-45deg);
+  }
+
+  .menuActive .second {
+    opacity: 0;
+  }
+
+  .menuActive .third {
+    transform: rotate(45deg);
+  }
+
+}

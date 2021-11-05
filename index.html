@@ -1,36 +1,12 @@
 <!--
- * @Descripttion: 
+ * @Description: 
  * @version: 1.0
  * @Author: yukaiwei
- * @Date: 2021-07-07 09:50:04
+ * @Date: 2021-11-03 10:05:07
  * @LastEditors: yukaiwei
- * @LastEditTime: 2021-07-07 09:54:40
+ * @LastEditTime: 2021-11-04 16:25:43
 -->
-<!--
- *                        _oo0oo_
- *                       o8888888o
- *                       88" . "88
- *                       (| -_- |)
- *                       0\  =  /0
- *                     ___/`---'\___
- *                   .' \\|     |// '.
- *                  / \\|||  :  |||// \
- *                 / _||||| -:- |||||- \
- *                |   | \\\  - /// |   |
- *                | \_|  ''\---/''  |_/ |
- *                \  .-\__  '-'  ___/-. /
- *              ___'. .'  /--.--\  `. .'___
- *           ."" '<  `.___\_<|>_/___.' >' "".
- *          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
- *          \  \ `_.   \_ __\ /__ _/   .-` /  /
- *      =====`-.____`.___ \_____/___.-`___.-'=====
- *                        `=---='
- * 
- * 
- *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
- *            佛祖保佑       永不宕机     永无BUG
- -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,9 +14,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>title</title>
-  <link rel="stylesheet" href="./static/icons/iconfont.css">
+  <title>FGT</title>
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/index.css">
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -50,8 +28,423 @@
     <![endif]-->
 </head>
 <body>
-  
+  <header class="nav_outer">
+    <img src="./images/WechatIMG3.png" alt="">
+    <ul class="nav"> 
+      <li><a href="#">首页</a></li>
+      <li><a href="#">产品服务</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">企业动态</a></li>
+      <li><a href="#">加入我们</a></li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+    <form action="" class="search">
+        <input type="text" placeholder="搜索...">
+        <a class="iconfont icon-a-xingzhuang3"></a>
+    </form>
+    
+    
+    <ul class="pc_hidden mobile_menu">
+      <li class="fist"></li>
+      <li class="second"></li>
+      <li class="third"></li>
+    </ul>
+  </header>
+  <!-- swiper-->
+   <div class="swiper-container top_swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(./images/swipper.png);">
+          <div class="wrapper_info">
+            <h2>中高端人才招聘专家</h2>
+            <p>我们是一家以“专业+合伙人+技术”驱动的
+              人才解决方案服务商</p>
+            <a href="">查看详情 》</a>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(./images/swipper.png);">
+          <div class="wrapper_info">
+            <h2>中高端人才招聘专家</h2>
+            <p>我们是一家以“专业+合伙人+技术”驱动的
+              人才解决方案服务商</p>
+              <a href="">查看详情 》</a>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(./images/swipper.png);">
+          <div class="wrapper_info">
+            <h2>中高端人才招聘专家</h2>
+            <p>我们是一家以“专业+合伙人+技术”驱动的
+              人才解决方案服务商</p>
+            <a href="">查看详情 》</a>
+          </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+   </div>
+
+  <!-- OUR ADVANTAGE -->
+  <section class="service container_bg">
+    <div class="ball_right alive_ball"></div>
+    <div class="ball_left alive_ball"></div>
+    <div class="section_Title">
+      <p>OUR SERVICE</p>
+      <h3>我们能给您提供什么服务</h3>
+    </div>
+    <ul class="service_content">
+      <li>
+        <i class="iconfont icon-rc"></i>
+        <h3>中高端人才招聘</h3>
+        <p>通过利用我们的实践经验、科学研究、专业知识解决企业中高级管理、专业技术人才短缺问题，为企业提供深入的行业及职能解决方案。
+        </p>
+      </li>
+      <li>
+        <i class="iconfont icon-map"></i>
+        <h3>人才地图</h3>
+        <p>通过与行业内的关键人才持续沟通，系统性的对行业内的人才进行盘点，帮助企业进行了解市场及对标公司的情况。
+        </p>
+      </li>
+      <li>
+        <i class="iconfont icon-wb"></i>
+        <h3>招聘流程外包</h3>
+        <p>通过分析客户的特定招聘需求FGTRecr-
+          uitment安排专职的项目经理和招聘团队进行驻场服务。为企业提供招聘约面候选人、面试评估候选人、薪酬谈判到最终入职管理服务。
+          
+        </p>
+      </li>
+      <li>
+        <i class="iconfont icon-dc"></i>
+        <h3>背景调查</h3>
+        <p>通过利用我们的实践经验、科学研究、专业知识解决企业中高级管理、专业技术人才短缺问题，为企业提供深入的行业及职能解决方案。
+        </p>
+      </li>
+      <li>
+        <i class="iconfont icon-px"></i>
+        <h3>培训</h3>
+        <p>通过利用我们的实践经验、科学研究、专业知识解决企业中高级管理、专业技术人才短缺问题，为企业提供深入的行业及职能解决方案。
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!--OUR ADVANTAGE and SERVICE INDUSTRY -->
+  <section class="advantage container_bg">
+    <div class="ball_right alive_ball"></div>
+    <div class="section_Title">
+      <p>OUR ADVANTAGE</p>
+      <h3>我们在行业中的优势</h3>
+    </div>
+    <div class="advantage_content">
+      <!--advantage_swiper  -->
+       <div class="swiper-container advantage_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/887f80d443909b02870c387d5b0ae214.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/887f80d443909b02870c387d5b0ae214.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/887f80d443909b02870c387d5b0ae214.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/887f80d443909b02870c387d5b0ae214.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/887f80d443909b02870c387d5b0ae214.png" alt="">
+            </div>
+          </div>
+       </div>
+       <div class="advantage_info"> 
+        <div class="advantage-pagination"></div>
+        <div class="text">
+          <h3>优秀的顾问团队</h3>
+          <p>顾问团队均来自各细分领域，我们坚持以“专业+技术+合伙人”模式驱动为源动力，我们长期以为客户和候选人创造价值最大化而感到骄傲自豪。</p>
+        </div>
+        <div class="advantage_swiper_btns">
+          <button class="iconfont icon-a-xingzhuang11kaobei"></button>
+          <button class="iconfont icon-a-xingzhuang11"></button>
+        </div>
+       </div>
+    </div>
+    <div class="industry">
+      <div class="section_Title">
+        <p>SERVICE INDUSTRY</p>
+        <h3>我们可以为哪些行业提供服务？</h3>
+      </div>
+      <div class="industry_swiper_box">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-container industry_swiper">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/ESSENTIALS 2.png" alt="">
+              </div>
+              <h3>汽车行业</h3>
+            </a>
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/VIOMInser.png" alt="">
+              </div>
+              <h3>家电行业</h3>
+            </a>
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/victor-2PJMDIgK9EA-unsplash.png" alt="">
+              </div>
+              <h3>化工行业</h3>
+            </a>
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/jc-gellidon-uhXlRnt9dTw-unsplash.png" alt="">
+              </div>
+              <h3>医疗行业</h3>
+            </a>
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/VCG217e786be4e.png" alt="">
+              </div>
+              <h3>轨道交通行业</h3>
+            </a>
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/ESSENTIALS 2.png" alt="">
+              </div>
+              <h3>汽车行业</h3>
+            </a>
+            <a href="#" class="swiper-slide">
+              <div class="imgbox">
+                <img src="./images/victor-2PJMDIgK9EA-unsplash.png" alt="">
+              </div>
+              <h3>化工行业</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+<!-- COOPERATION PROCESS -->
+  <section class="gray_bg">
+    <div class="container">
+      <div class="section_Title">
+        <p>COOPERATION PROCESS</p>
+        <h3>与我们合作的流程</h3>
+      </div>
+      <div class="PROCESS">
+        <ul class="step_one">
+          <li style="background-image: url(./images/arrow1.png);">
+            <div class="num" style="color: #ffba08;">01</div>
+            <div class="step_name">职位访谈</div>
+          </li>
+          <li style="background-image: url(./images/arrow2.png);">
+            <div class="num" style="color: #faa307;">02</div>
+            <div class="step_name">制定候选人寻访计划</div>
+          </li>
+          <li style="background-image: url(./images/arrow3.png);">
+            <div class="num" style="color: #f48c06;">03</div>
+            <div class="step_name">候选人评估与寻访</div>
+          </li>
+          <li style="background-image: url(./images/arrow4.png);">
+            <div class="num" style="color: #e85d04;">04</div>
+            <div class="step_name">候选人推荐与面试</div>
+          </li>
+          <li style="background-image: url(./images/arrow5.png);">
+            <div class="num" style="color: #dc2f02;">01</div>
+            <div class="step_name">协调企业面试候选人</div>
+          </li>
+        </ul>
+        <ul class="step_two step_one">
+          <li style="background-image: url(./images/arrow10.png);">
+            <div class=" iconfont icon-a-xingzhuang22">职位访谈</div>
+          </li>
+          <li style="background-image: url(./images/arrow9.png);">
+            <div class="num" style="color: #370617;">09</div>
+            <div class="step_name">后续保障及服务</div>
+          </li>
+          <li style="background-image: url(./images/arrow8.png);">
+            <div class="num" style="color: #6a040f;">08</div>
+            <div class="step_name">协助候选人入职</div>
+          </li>
+          <li style="background-image: url(./images/arrow7.png);">
+            <div class="num" style="color: #9d0208;">07</div>
+            <div class="step_name">候选人背景调查</div>
+          </li>
+          <li style="background-image: url(./images/arrow6.png);">
+            <div class="num" style="color: #d00000;">06</div>
+            <div class="step_name">薪酬谈判</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<!-- FGT RECRUITMENT -->
+  <section class="recruitment">
+    <div class="container">
+      <div class="card">
+        <div class="imgbox">
+          <img src="./images/abbe-sublett-nxZDMUQhN4o-unsplash.png" alt="">
+        </div>
+        <div class="card_info">
+          <div class="title">
+            <p>FGT RECRUITMENT</p>
+            <h3>优嘉美贤（北京）人力资源有限公司 </h3>
+          </div>
+          <p>是一家以”顾问+专业+技术“驱动的人才解决方案服务商，公司致力于为跨国集团、国内外上市公司、创新创业企业、国企、政府以及非盈利组织等客户提供中高端人才寻访、招聘流程外包、培训、人才地图、背景调查等人力资源服务。FGT Recruitment 创立于中国，团队来自于多个细分行业及领域，近百名专业猎头顾问，服务客户近千家。成功推荐中高端管理人才及专业技术岗位人才超千名。FGT Recruitment为了达到最佳的人才匹配。我们为每个垂直行业配备了经验丰富的团队...</p>
+          <button>查看详情 》</button>
+        </div>
+      </div>
+      <div class="hr"><span class="text">服务客户</span></div>
+      <div class="customer">
+          <div class="iconfont icon-left customer_swiper_prev"></div>
+          <div class="swiper-container customer_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/tsslr.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/mi.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/wly.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/qilu.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/dq.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/jt.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/jt.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="">
+                  <img src="./images/jt.png" alt="">
+                </a>
+              </div>
+            </div>
+        </div> 
+        <div class="iconfont icon-right customer_swiper_next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer_centent">
+      <div class="container">
+        <div class="contact">
+          <h3>与我们取得联系</h3>
+          <form action="" class="footer_centent_form">
+            <input type="text" placeholder="在此输入您的电话号码，谢谢！">
+            <button class="iconfont icon-a-xingzhuang5kaobei"></button>
+          </form>
+        </div>
+        <div class="links">
+          <ul>
+            <li><h3>产品服务</h3></li>
+            <li><a href="#">中高端人才招聘</a></li>
+            <li><a href="#">招聘流程外包</a></li>
+            <li><a href="#">培训</a></li>
+            <li><a href="#">人才地图</a></li>
+            <li><a href="#">背景调查</a></li>
+          </ul>
+          <ul>
+            <li><h3>关于我们</h3></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">企业文化</a></li>
+            <li><a href="#">服务客户</a></li>
+          </ul>
+          <ul>
+            <li><h3>企业动态</h3></li>
+            <li><a href="#">公司新闻</a></li>
+            <li><a href="#">行业新闻</a></li>
+            <li><a href="#">疑难问答</a></li>
+          </ul>
+          <ul>
+            <li><h3>加入我们</h3></li>
+            <li><a href="#">招聘中心</a></li>
+          </ul>
+          
+          <ul>
+            <li><h3>联系我们</h3></li>
+            <li>手机：13520408645 （任女士）</li>
+            <li> 邮箱：fgtrecruitment@yjmxhh.com</li>
+            <li>Q Q：2021921061</li>
+            <li>地址：北京市朝阳区酒仙桥将台路14号43幢一层-102室</li>
+            <li>沈阳办公地址：沈阳市大东区龙之梦大厦2512-14室</li>
+          </ul>
+          <div class="scan_box">
+            <img src="./images/scancode.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyRight">
+      <div class="container">
+        <p>Copyright  ©  2021-2021   优嘉美贤（北京）人力资源有公司  All Rights Reserved.    备案号：***************</p>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="./js/jquery.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/common.js"></script>
+<script>
+   var top_swiper = new Swiper ('.top_swiper', {
+    loop: true, // 循环模式选项
+    autoplay:true,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.top_swiper .swiper-button-next',
+      prevEl: '.top_swiper .swiper-button-prev',
+    },
+  })
+   var industry_swiper = new Swiper ('.industry_swiper', {
+    autoplay:true,
+    slidesPerView:$(window).width()>768? 5:1,
+    spaceBetween: $(window).width()>768?25:0,
+    navigation: {
+      nextEl: '.industry_swiper_box .swiper-button-next',
+      prevEl: '.industry_swiper_box .swiper-button-prev',
+    },
+  })
+  
+  var customer_swiper = new Swiper ('.customer_swiper', {
+    autoplay:true,
+    slidesPerView:$(window).width()>768? 6:2,
+    spaceBetween: $(window).width()>768? 14:14,
+    navigation: {
+      nextEl: '.customer_swiper_next',
+      prevEl: '.customer_swiper_prev',
+    },
+  })
+  var advantage_swiper = new Swiper(".advantage_swiper", {
+    autoplay:true,
+    pagination: {
+      el: ".advantage-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".icon-a-xingzhuang11",
+      prevEl: ".icon-a-xingzhuang11kaobei",
+    },
+  });        
+</script>
 </html>

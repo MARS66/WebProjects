@@ -1,0 +1,259 @@
+section {
+  padding-bottom: 6rem;
+}
+
+section .ball_right {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  position: absolute;
+  right: -10rem;
+  top: -6rem;
+  background-image: linear-gradient(132deg,
+      #ffc72000 0%,
+      #ff6a2054 50%, #ff6a200e 100%);
+  z-index: -1;
+  opacity: 0.6;
+  box-shadow: #7e776534 2px 2px 100px 2px;
+}
+
+section .ball_left {
+  width: 13rem;
+  height: 19rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -2rem;
+  bottom: -4rem;
+  background-image: linear-gradient(-54deg,
+      #ffc7204f 0%,
+      #ff6a2067 100%);
+  opacity: 0.3;
+  z-index: -1;
+  opacity: 0.6;
+  filter: url(#ffc7204f);
+  box-shadow: 0 0 80px #fbda72,
+    0 0 30px #ffc7204f,
+    0 0 6px #ffc72027;
+}
+
+.title {
+  font-family: MicrosoftYaHei;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  padding: 2.4rem 0;
+}
+
+.service_content {
+  border: solid 0.05rem #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3.85rem;
+}
+
+.service_content li {
+  flex: 1;
+  padding: 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service_content li h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0.06rem;
+  color: #000000;
+}
+
+.service_content li p {
+  margin-top: 1.8rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0.035rem;
+  color: #5f5f5f;
+  max-width: 18rem;
+}
+
+.service_content li .iconfont {
+  color: #ff6c20;
+  font-size: 2rem;
+  margin-bottom: 1.95rem;
+}
+
+.service_content li:nth-child(3),
+.service_content li:nth-child(4),
+.service_content li:nth-child(1) {
+  border-right: solid 0.05rem #eeeeee;
+}
+
+.service_content li:nth-child(1) .iconfont,
+.service_content li:nth-child(2) .iconfont {
+  margin-right: 3.5rem;
+}
+
+.service_content li:nth-child(1),
+.service_content li:nth-child(2) {
+  box-sizing: border-box;
+  width: 50%;
+  flex: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4.7rem 5rem;
+  border-bottom: solid 0.05rem #eeeeee;
+}
+
+
+.service .contact {
+  display: block;
+  margin: 0 auto;
+  width: 17rem;
+  text-align: center;
+  line-height: 3.5rem;
+  height: 3.5rem;
+  background-color: #ff6c20;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(255, 108, 32, 0.2);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.service .contact::before {
+  margin-right: 0.5rem;
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.advantages li {
+  display: flex;
+  background-color: #fafafa;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages li .imgbox {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 12.5rem;
+  font-size: 0;
+  background-color: #ffffff;
+}
+
+.advantages li .imgbox .iconfont {
+  font-size: 1rem;
+  color: #fafafa;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  transform: rotate(180deg);
+  right: -0.3rem;
+}
+
+.advantages .row-reverse .imgbox .iconfont {
+  transform: unset;
+  left: -0.3rem;
+}
+
+.advantages li .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform ease-out 0.4s;
+}
+
+.advantages li:hover img {
+  transform: scale(1.1);
+}
+
+.advantages li .info {
+  flex: 1;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.advantages li .info h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-bottom: 0.95rem;
+  margin-bottom: 1.2rem;
+  color: #000000;
+  position: relative;
+}
+
+.advantages li .info h3::after {
+  content: '';
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: #ff6c20;
+  border-radius: 0.05rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.advantages li .info p {
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #5f5f5f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width:768px) {
+
+  .service_content li {
+    width: 100% !important;
+    padding: 2rem 1rem !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex: unset;
+  }
+
+  .service_content li:not(:last-child) {
+    border: 0;
+    border-bottom: 0.05rem solid #eeeeee;
+  }
+
+  .service_content li h3 {
+    text-align: center;
+  }
+
+  .service_content li .iconfont {
+    color: #ff6c20;
+    font-size: 2rem;
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  .service_content li p {
+    margin-top: 1rem;
+  }
+
+  .advantages {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+
+  .advantages li .imgbox {
+    height: auto;
+  }
+
+  .advantages li .info {
+    padding: 1rem;
+  }
+}

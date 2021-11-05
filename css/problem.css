@@ -1,0 +1,142 @@
+section {
+  padding-bottom: 6rem;
+}
+
+section .ball_right {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  position: absolute;
+  right: -10rem;
+  top: -6rem;
+  background-image: linear-gradient(132deg,
+      #ffc72000 0%,
+      #ff6a2054 50%, #ff6a200e 100%);
+  z-index: -1;
+  opacity: 0.6;
+  box-shadow: #7e776534 2px 2px 100px 2px;
+}
+
+section .ball_left {
+  width: 13rem;
+  height: 19rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -2rem;
+  bottom: -4rem;
+  background-image: linear-gradient(-54deg,
+      #ffc7204f 0%,
+      #ff6a2067 100%);
+  opacity: 0.3;
+  z-index: -1;
+  opacity: 0.6;
+  filter: url(#ffc7204f);
+  box-shadow: 0 0 80px #fbda72,
+    0 0 30px #ffc7204f,
+    0 0 6px #ffc72027;
+}
+
+.news_nav {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news_nav li a {
+  display: block;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  border: solid 0.05rem #e5e5e5;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-right: 0.5rem;
+}
+
+.news_nav li a:hover,
+.news_nav .active a {
+  background-color: #ff6c20;
+  border: solid 0.05rem #e5e5e5;
+  color: #ffffff;
+}
+
+.problems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+  align-content: flex-start;
+  align-items: start;
+}
+
+.problems li {
+  border: solid 0.05rem #eeeeee;
+  background-color: #fff;
+}
+
+.problems li:hover {
+  box-shadow: 0rem 0.75rem 1.5rem 0rem rgba(0, 0, 0, 0.1);
+  border: solid 0.05rem #eeeeee;
+}
+
+.question {
+  padding: 1.7rem 2rem;
+}
+
+.question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.problems li:hover .question {
+  color: #ff6c20;
+}
+
+.question h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.question .iconfont {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #ff6c20;
+}
+
+.anwser {
+  border-top: 1px solid #eeeeee;
+  display: none;
+}
+
+.anwser p {
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  text-align: justify;
+  white-space: pre-wrap;
+  color: #5f5f5f;
+  padding: 1.7rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .news_nav {
+    padding: 1.5rem 0;
+  }
+
+  .news_nav li a {
+    width: auto;
+    padding: 0 1rem;
+  }
+
+  .problems {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
