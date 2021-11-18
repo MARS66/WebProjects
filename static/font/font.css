@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Bouldersans;
+  src: url(./boulder.ttf);
+}
+@font-face {
+  font-family: Mastsans;
+  src: url(./Mast\ sans.ttf);
+}
+@font-face {
+  font-family: SourceHanSansCN-Bold;
+  src: url(./SourceHanSansCN-Bold.otf);
+}
+@font-face {
+  font-family: SourceHanSansCN-ExtraLight;
+  src: url(./SourceHanSansCN-ExtraLight.otf);
+}
+@font-face {
+  font-family: SourceHanSansCN-Heavy;
+  src: url(./SourceHanSansCN-Heavy.otf);
+}
+@font-face {
+  font-family: SourceHanSansCN-Light;
+  src: url(../font/SourceHanSansCN-Light.otf);
+}
+@font-face {
+  font-family: SourceHanSansCN-Medium;
+  src: url(./SourceHanSansCN-Medium.otf);
+}
+@font-face {
+  font-family: SourceHanSansCN-Normal;
+  src: url(./SourceHanSansCN-Normal.otf);
+}
+@font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url(./SourceHanSansCN-Regular.otf);
+}

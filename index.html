@@ -1,36 +1,4 @@
-<!--
- * @Descripttion: 
- * @version: 1.0
- * @Author: yukaiwei
- * @Date: 2021-07-07 09:50:04
- * @LastEditors: yukaiwei
- * @LastEditTime: 2021-07-07 09:54:40
--->
-<!--
- *                        _oo0oo_
- *                       o8888888o
- *                       88" . "88
- *                       (| -_- |)
- *                       0\  =  /0
- *                     ___/`---'\___
- *                   .' \\|     |// '.
- *                  / \\|||  :  |||// \
- *                 / _||||| -:- |||||- \
- *                |   | \\\  - /// |   |
- *                | \_|  ''\---/''  |_/ |
- *                \  .-\__  '-'  ___/-. /
- *              ___'. .'  /--.--\  `. .'___
- *           ."" '<  `.___\_<|>_/___.' >' "".
- *          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
- *          \  \ `_.   \_ __\ /__ _/   .-` /  /
- *      =====`-.____`.___ \_____/___.-`___.-'=====
- *                        `=---='
- * 
- * 
- *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
- *            佛祖保佑       永不宕机     永无BUG
- -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,9 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>title</title>
-  <link rel="stylesheet" href="./static/icons/iconfont.css">
+  <link rel="stylesheet" href="./static/font/font.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/pc.css">
+  <link rel="stylesheet" href="./css/mobile.css">
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
   <!--[if lt IE 9]>
@@ -50,8 +20,357 @@
     <![endif]-->
 </head>
 <body>
+  <header>
+    <img class="logo" src="./static/images/LOGO.png" alt="">
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Lanchpad</a></li>
+      <li><a href="#">Marketplace</a></li>
+      <li><a href="#">Stake</a></li>
+      <li><a href="#">RentToEarn</a></li>
+      <li><a href="#">Governances</a></li>
+      <li><a href="#">Doc</a></li>
+    </ul>
+    <div class="language">
+      <img  class="flag" src="./static/images/contry.png" alt="" srcset="">
+      <img class="down" src="./static/images/down.png" alt="" srcset="">
+    </div>
+    <ul class="pc_hidden mobile_menu">
+      <li class="fist"></li>
+      <li class="second"></li>
+      <li class="third"></li>
+    </ul>
+  </header>
+  <!-- crypto-steam -->
   
+  <div class="crypto-steam" style="background-image: url(./static/images/BG.png);">
+    <div class="crypto-steam-content">
+      <img class="title" src="./static/images/CryptoSteam.png" alt="" srcset="">
+      <div class="text">
+        <img src="./static/images/CryptoGame.png" alt="" srcset="">
+      </div>
+
+      <div class="btns">
+        <div>
+          <img src="./static/images/BUY CST.png" alt="">
+          <img src="./static/images/ENTER APP.png" alt="">
+        </div>
+        <ul class="shares">
+          <li><a href=""><img src="./static/images/share5.png" alt="" srcset=""></a></li>
+          <li><a href=""><img src="./static/images/share4.png" alt="" srcset=""></a></li>
+          <li><a href=""><img src="./static/images/share3.png" alt="" srcset=""></a></li>
+          <li><a href=""><img src="./static/images/share2.png" alt="" srcset=""></a></li>
+          <li><a href=""><img src="./static/images/share1.png" alt="" srcset=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="gray_bg">
+    <div class="swiper-container mp4_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/static/images/swiper.jpeg" alt="" srcset="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/static/images/swiper1.jpg" alt="" srcset="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/static/images/swiper3.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+
+    <div class="fex_center"> 
+      <ul class="long">
+        <li>
+          <img src="./static/images/hz.png" alt="" srcset="">
+          <div class="content">
+            <h3>
+              <div>Defi2.0</div> 
+              <div>Protocol</div>
+            </h3>
+            <p>Protocol controls liquidity、DAO treasury maintains the token price、（3，3）Staking theory, promoting and supporting the continuous rise of the CST Token price.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./static/images/yx.png" alt="" srcset="">
+          <div class="content">
+            <h3>
+              <div>GameFi</div> 
+              <div>Play to Earn</div>
+            </h3>
+            <p>CryptoSteam promotes game incubation and distribution, while building a universal entertainment, marketplace that hosts a large variety of fun and engaging games which are transformed into highly monetizable entertainment experiences using our new blockchain financial system!</p>
+          </div>
+        </li>
+        <li>
+          <img src="./static/images/zs.png" alt="" srcset="">
+          <div class="content">
+            <h3>
+              <div>NFT</div> 
+              <div>Yield Farming</div>
+            </h3>
+            <p>It provides complete NFT underlying tools, including NFT casting, trading, and mining, etc. Concurrently, it will also open up a variety of gameplay such as additional capabilities, and reproduction. CryptoSteam NFT is not only a collectible, but also the key towards customizing your game experience, making it even more unique and exciting.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./static/images/hz.png" alt="" srcset="">
+          <div class="content">
+            <h3>
+              <div>Marketpalce</div> 
+            </h3>
+            <p>The decentralized Marketplace developed based on our proprietary Ethereum sidechain provides a place for transaction and transfer of game NFT assets to enhance the value of the NFT, while protecting the security of user’s assets.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ido-platform -->
+  <div class="ido-platform" style="background-image: url(./static/images/bg2.png);">
+    <div class="ido-platform-content">
+        <img class="title" src="./static/images/IDO Platform.png" alt="" srcset="">
+        <div class="text">
+          <h3>Dedragon</h3>
+          <p>The first GameFi2.0 game on the </p>
+          <p>CryptoSteam.</p>
+        </div>
+        <button>IDO is coming soon</button>
+    </div>
+    <div class="mp4">
+      <video src="./static/images/WeChat_20211117095541.mp4"  height="100%" autoplay muted loop></video>
+    </div>
+  </div>
+<!-- our-advantage -->
+  <div class="our-advantage" style="background-image: url(./static/images/bg3.png);">
+    <div class="advantage_title">
+      <img class="title" src="./static/images/Our advantage.png" alt="" srcset="">
+    </div>
+
+    <ul class="advantage_center">
+       <li>
+         <img src="./static/images/cheacked.png" alt="">
+         <div><span>100% Decentralized</span></div>
+       </li> 
+       <li>
+         <img src="./static/images/fenhong.png" alt="">
+         <div><span>Currency Holding 
+          Dividend Mechanism</span></div>
+       </li> 
+       <li>
+         <img src="./static/images/xieyi.png" alt="">
+         <div><span>Protocol controls liquidity</span></div>
+       </li> 
+       <li>
+         <img src="./static/images/gf.png" alt="">
+         <div><span>Large prize pool</span></div>
+       </li> 
+       <li>
+         <img src="./static/images/ETH.png" alt="">
+         <div><span>Ethereum Sidechain - Snow </span></div>
+       </li> 
+       <li>
+         <img src="./static/images/pay.png" alt="">
+         <div><span>Payment system SDK</span></div>
+       </li>
+    </ul>
+
+    <div class="advantage_title">
+      <img class="title" src="./static/images/Road map.png" alt="" srcset="">
+    </div>  
+    <div class="Road">
+      <ul>
+        <li>
+          <img src="./static//images/dgou.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Contract deployment & Audit</div>
+        </li>
+        <li>
+          <img src="./static//images/dgou.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">NFT mining launch</div>
+        </li>
+        <li>
+          <img src="./static//images/dgou.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">NFT Market launch</div>
+        </li>
+        <li>
+          <img src="./static//images/dgou.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">DeDragon Game Public</div>
+        </li>
+        <li>
+          <img src="./static//images/dgou.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Entered Binance NFT Market</div>
+        </li>
+        <li>
+          <img src="./static//images/dgou.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Guild System </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="./static//images/engor.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">PancakeSwap Launch</div>
+        </li>
+        <li>
+          <img src="./static//images/engor.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Dedragon Metaverse Island Launch</div>
+        </li>
+        <li>
+          <img src="./static//images/engor.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Ethereum Sidechain Snow Development</div>
+        </li>
+        <li>
+          <img src="./static//images/engor.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">KingsNFT Puzzle Development</div>
+        </li>
+        <li>
+          <img src="./static//images/engor.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Samurai online BSC Chain</div>
+        </li>
+        <li>
+          <img src="./static//images/engor.png" alt="">
+          <div class="line">
+            <span class="round"></span>
+          </div>
+          <div class="text">Nfts Slots Development</div>
+        </li>
+      </ul>
+    </div>
+    
+     <div class="advantage_title">
+      <img class="title" src="./static/images/How To Buy $CST_.png" alt="" srcset="">
+    </div>
+
+    <ul class="HowToBuy">
+      <li>
+        <img src="./static/images/how.png" alt="">
+        <div>
+          <h3>Create a wallet</h3>
+          <p>On Google Chrome, visit metamask.io to download the extension and set up the wallet. Android and iOS users can download the Trust Wallet app.</p>
+        </div>
+      </li>
+      <li>
+        <img src="./static/images/how3.png" alt="">
+        <div>
+          <h3>
+            <div>Send $BNB to Binance </div> 
+            <div>Chain Wallet</div>
+           </h3>
+          <p>Buy BNB from Binance Exchange and transfer to your Trust Wallet wallet address.</p>
+        </div>
+      </li>
+      <li>
+        <img src="./static/images/how3.png" alt="">
+        <div>
+          <h3>
+            <div>Use $BNB to </div> 
+            <div>exchange $CST</div>
+           </h3>
+          <p>Go to the DApps tab at the bottom, find PancakeSwap V2 , click “Choose Currency”, enter the contract address in the search bar, and you should be able to find CST.
+            CST counterparty address: Before the exchange, click the gear and set the slide to 12-15% , set the amount you want to buy and click the exchange button.
+            
+            If you are operating on the PC, please enter the PancakeSwapV2 official website and click “Connect Wallet” at the top right of the website.
+            
+            PancakeSwap:
+            https://exchange.pancakeswap.finance</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="blue_BG">
+    <!-- our-team  -->
+    <div class="blue_BG_content">
+      <img class="title" src="./static/images/our team.png" alt="" srcset="">
+    </div>
+    <ul class="our-team">
+      <li>
+        <img src="./static/images/a0.png" alt="" srcset="">
+        <p>DANIEL CHAN</p>
+      </li>
+      <li>
+        <img src="./static/images/avatar.png" alt="" srcset="">
+        <p>AARON PULKKA</p>
+      </li>
+      <li>
+        <img src="./static/images/a.png" alt="" srcset="">
+        <p>CYRUS LUM</p>
+      </li>
+      <li>
+        <img src="./static/images/a3.png" alt="" srcset="">
+        <p>CLIFF CHIU</p>     
+      </li>
+    </ul>
+    <div class="blue_BG_content">
+      <img class="title" src="./static/images/PARTNERS.png" alt="" srcset="">
+    </div>
+    <ul class="PARTNERS">
+      <li><img src="./static/images/btn1.png" alt="" srcset=""></li>
+      <li><img src="./static/images/btn2.png" alt="" srcset=""></li>
+      <li><img src="./static/images/btn3.png" alt="" srcset=""></li>
+    </ul>
+    <div class="blue_BG_content">
+      <img class="title" src="./static/images/JOIN OUR COMMUNITY.png" alt="" srcset="">
+    </div>
+    <ul class="JOINOUR">
+      <li><img src="./static/images/logo2.png" alt="" srcset=""></li>
+      <li><img class="logo3" src="./static/images/logo3.png" alt="" srcset=""></li>
+      <li><img src="./static/images/logo4.png" alt="" srcset=""></li>
+    </ul>
+
+    <!-- footer -->
+    <ul class="footer_links">
+      <li><a href=""> <img src="./static/images/share1.png" alt="" srcset=""></a></li>
+      <li><a href=""><img src="./static/images/share3.png" alt="" srcset=""> </a></li>
+      <li><a href=""><img src="./static/images/share4.png" alt="" srcset=""></a></li>
+      <li><a href=""><img src="./static/images/share5.png" alt="" srcset=""></a></li>
+    </ul>
+
+    <div class="copyRingt">Copyright © 2021.CryptoSteam.com.All rights reserved</div>
+  </div>
 </body>
 <script src="./js/jquery.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/common.js"></script>
+<script>
+  var swiper = new Swiper('.mp4_swiper', {
+      slidesPerView: 2,
+      spaceBetween: $(window).width()>768? -300:-70,
+	    centeredSlides: true,
+	    loop: true,
+      autoplay:true,
+    });
+</script>
 </html>

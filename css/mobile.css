@@ -1,0 +1,246 @@
+@media (max-width: 768px) {
+  header {
+    padding: 0 15px;
+    height: 4rem;
+    justify-content: space-between;
+  }
+
+  header .nav {
+    z-index: 10;
+    padding: 3rem 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #412e97;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  header .nav li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2.8rem;
+  }
+
+  header .nav li {
+    padding: 0 2rem;
+  }
+
+  .logo {
+    height: 3rem;
+    margin: 0;
+  }
+
+  .language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .flag {
+    width: 3.6rem;
+    height: 1.9rem;
+    object-fit: cover;
+  }
+
+  .down {
+    margin-top: 0;
+    margin-left: 0.65rem;
+    height: 0.55rem
+  }
+
+  /* crypto-steam */
+  .crypto-steam {
+    height: auto;
+  }
+
+  .crypto-steam-content {
+    padding: 5rem 15px;
+    box-sizing: border-box;
+  }
+
+  .title {
+    height: auto;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .crypto-steam-content .text {
+    margin: 3rem 0;
+  }
+
+  .crypto-steam-content .btns div img {
+    margin-right: 3rem;
+    height: 3.2rem;
+  }
+
+  .crypto-steam-content .btns div {
+    display: flex;
+  }
+
+
+  .crypto-steam-content .btns .shares {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .mp4_swiper {
+    height: 18.5rem;
+  }
+
+  .mp4_swiper .swiper-slide {
+    height: 16rem;
+  }
+
+  .long {
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .long li img {
+    height: 4rem;
+    margin-bottom: 0;
+  }
+
+  .ido-platform {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 3.5rem 1rem;
+    position: relative;
+  }
+
+  .ido-platform::after {
+    content: '';
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.9) 50%, #000);
+  }
+
+  video {
+    object-fit: cover;
+  }
+
+  .mp4 {
+    height: 15rem;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    z-index: 1;
+  }
+
+  .ido-platform .title {
+    height: 3rem;
+  }
+
+  .ido-platform-content {
+    z-index: 1;
+  }
+
+  .ido-platform-content .text {
+    font-family: SourceHanSansCN-Regular;
+    font-size: 2.084rem;
+    letter-spacing: 0.02rem;
+    color: #ffffff;
+  }
+
+  .ido-platform-content p {
+    padding-top: 0.8rem;
+  }
+
+  /* our-advantage */
+  .our-advantage {
+    overflow: hidden;
+    padding: 0 15px;
+    padding-bottom: 7rem;
+  }
+
+  .advantage_title .title {
+    height: 2.8rem;
+  }
+
+  .advantage_center {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding-left: 2rem;
+  }
+
+
+  .HowToBuy li {
+    flex-direction: column !important;
+  }
+
+  .HowToBuy li>div {
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+  }
+
+
+  /* Road */
+  .Road {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5.3rem;
+  }
+
+  .Road li .text {
+    flex: 1;
+    padding: 0 1rem;
+    width: auto;
+    height: 6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+
+  .Road li .line {
+    height: 8rem;
+  }
+
+  .our-team {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    padding: 3rem 0;
+  }
+
+  .blue_BG_content .title {
+    height: 3rem;
+  }
+
+  .PARTNERS {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .JOINOUR {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .JOINOUR li {
+    justify-content: flex-start;
+  }
+
+  .JOINOUR img {
+    height: 5rem;
+    object-fit: cover;
+  }
+
+  .JOINOUR .logo3 {
+    height: 6rem;
+  }
+
+  .copyRingt {
+    font-size: 1rem;
+  }
+}
