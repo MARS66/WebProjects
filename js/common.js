@@ -4,10 +4,16 @@
  * @Author: yukaiwei
  * @Date: 2021-07-07 09:50:04
  * @LastEditors: yukaiwei
- * @LastEditTime: 2021-07-07 10:25:31
+ * @LastEditTime: 2021-12-20 15:25:48
  */
-
-$('.mobile_menu').click(function(){
+$(function (params) {
+  var wTop=$(window).height();
+  window.onresize=()=>{
+   var wTop=$(window).height();
+  }
+  
+  // 移动端到航
+  $('.mobile_menu').click(function(){
     if ($(this).hasClass('menu_active')) {
       $(this).removeClass('menu_active')
     }else{
@@ -19,10 +25,7 @@ $('.mobile_menu').click(function(){
   })
 
 
-  var wTop=$(window).height();
-  window.onresize=()=>{
-   var wTop=$(window).height();
-  }
+  // 鼠标滚动动画
   $(window).scroll(()=>{
     animation();
   });
@@ -36,3 +39,5 @@ $('.mobile_menu').click(function(){
     });
   }
   animation();
+})
+

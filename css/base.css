@@ -6,13 +6,6 @@
 
 :root {
   --active: rgb(0, 68, 191);
-  --button-hover: rgb(0, 68, 191,0.6);
-  --background: #252525;
-  --title: #5b5b5b;
-  --text: #a2a2a2;
-  --line: #222222;
-  --text-h: #ffffff;
-  --text-1: #646464;
 }
 
 
@@ -163,9 +156,8 @@ li {
 .border {
   border: 1px solid var(--line);
 }
-.h_l{
-  color: var(--active);
-}
+
+
 .n_b_t {
   border-top: unset;
 }
@@ -193,8 +185,37 @@ li {
   border-color: var(--active);
 }
 
+.h_l {
+  color: var(--active);
+}
+
 .active {
   color: var(--active);
+}
+
+/* 动画 */
+.animation {
+  opacity: 0;
+  transform: translateY(4rem);
+}
+
+.l_to_r {
+  transform: translate(-4rem, 0);
+}
+
+.r_to_l {
+  transform: translate(4rem, 0);
+}
+
+.ani {
+  animation: ani 0.6s ease forwards;
+}
+
+@keyframes ani {
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 @media (max-width: 768px) {
