@@ -1,0 +1,113 @@
+body{
+    border-color: #171717;
+}
+article {
+    display: flex;
+}
+.article_centent{
+    flex: 1;
+}
+.article_title h3{
+    font-size: 2.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 3.25rem;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+.article_title p{
+	font-family: SourceHanSansCN-Light;
+	font-size: 0.9rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 3.25rem;
+	letter-spacing: 0rem;
+	color: #5950bd; 
+}
+
+.article_text{
+    padding: 2rem 0;
+}
+
+.article_text img{
+    max-width: 100%;
+    margin: 1rem 0;
+}
+.article_text  p{
+    font-family: SourceHanSansCN-ExtraLight;
+	font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.5rem;
+	letter-spacing: 0rem;
+    text-align: justify;
+    white-space: pre-line;
+	color: #a2a2a2;
+}
+
+.article_btns{
+    font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.5rem;
+	letter-spacing: 0rem;
+	color: #a2a2a2;
+}
+.article_btns a{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.recommends{
+    width: 21rem;
+    margin-left: 8rem ;
+}
+.recommends img{
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+.imgbox{
+ overflow: hidden;
+}
+.recommends li:hover img{
+    transform: scale(1.1);
+}
+.recommends h3{
+    font-family: SourceHanSansCN-Light;
+	font-size: 1.5rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.8rem;
+	letter-spacing: 0rem;
+	color: #ffffff;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+.recommends li a{
+    display: block;
+    padding-bottom: 3rem;
+}
+.recommends p{
+	font-family: SourceHanSansCN-ExtraLight;
+	font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.2rem;
+    text-align: justify;
+	letter-spacing: 0rem;
+	color: #a2a2a2;
+}
+
+@media screen and (max-width:768px) {
+    .header{
+     padding-bottom: 1rem;
+    }
+    article {
+     flex-direction: column;
+    }
+    .recommends{
+        padding: 2rem 0;
+        width: unset;
+        margin-left: 0 ;
+    }
+}
