@@ -1,0 +1,36 @@
+header {
+  background-color: var(--active);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  height: 1.5rem;
+}
+
+.nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: Roboto-Bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.nav .drop {
+  color: #ffffff;
+}
+
+
+.nav li:not(:last-child) {
+  margin-right: 2rem;
+}
