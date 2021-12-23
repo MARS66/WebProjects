@@ -76,7 +76,7 @@ button {
   cursor: pointer;
   background-color: #ffffff;
   color: #171717;
-  border: 1px solid transparent
+  /* border: 1px solid transparent */
 }
 
 .default:hover {
@@ -88,8 +88,8 @@ button.iconfont::before {
 }
 
 button:hover {
-  border-color: var(--active);
-  background-color: var(--button-hover);
+  /* border-color: var(--active); */
+  /* background-color: var(--button-hover); */
 }
 
 .primary {
@@ -218,6 +218,14 @@ li {
   }
 }
 
+.scale {
+  transition: transform 0.3s ease;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .container {
 
@@ -256,7 +264,7 @@ li {
     flex: unset;
     height: 0.15rem;
     border-radius: 0.075rem;
-    background-color: var(--active);
+    background-color: #ffffff;
     transition: transform ease 0.3s;
     transform-origin: right;
   }

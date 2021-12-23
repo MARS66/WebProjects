@@ -1,0 +1,203 @@
+header {
+  background-color: #7CD1BE;
+  position: unset;
+}
+
+
+.back {
+  padding: 2rem 15px;
+}
+
+.back a {
+  display: block;
+  width: 5rem;
+  line-height: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  background-color: #7cd1be;
+  border-radius: 0.875rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back a::before {
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+.article_box {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+
+article {
+  flex: 1;
+  background-color: #f5fbfa;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+
+.article_title {
+  padding-bottom: 1.5rem;
+}
+
+.article_content {
+  padding: 1.35rem 0;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  font-family: Roboto-Regular;
+  font-size: 0.7rem;
+  white-space: pre-line;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  text-align: justify;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+article .share {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+article .share span {
+  font-family: MicrosoftSansSerif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #232e30;
+  padding: 0 1rem;
+  border-right: 1px solid #eee;
+}
+
+article .share a {
+  font-size: 0;
+}
+
+article .share img {
+  height: 1.2rem;
+  margin-left: 1rem;
+}
+
+.article_title h3 {
+  font-family: Roboto-Regular;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #232e30;
+}
+
+.article_title p {
+  padding-top: 1rem;
+  font-family: Roboto-Regular;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #959595;
+}
+
+.news {
+  width: 13.8rem;
+  margin-left: 1.6rem;
+}
+
+.news li {
+  background-color: #f5fbfa;
+  border-radius: 0.5rem;
+  margin-bottom: 1.6rem;
+  overflow: hidden;
+}
+
+.news li .info {
+  padding: 1.5rem;
+}
+
+.news li .info h3 {
+  font-family: Roboto-Bold;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+  margin-bottom: 0.5rem;
+}
+
+.news li .info p {
+  font-family: Roboto-Light;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.news li .time {
+  font-family: Roboto-Regular;
+  font-size: 0.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #959595;
+}
+
+.imgbox {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.imgbox img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.news li:hover img {
+  transform: scale(1.1);
+}
+
+.news .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.news .btns button {
+  background-color: #7CD1BE;
+  color: #fff;
+  border-radius: 1.5rem;
+}
+
+@media screen and (max-width:768px) {
+  .back {
+    padding: 1rem 15px;
+  }
+
+  .article_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  article {
+    padding: 2rem 1rem;
+  }
+
+  .news {
+    width: unset;
+    margin-left: unset;
+    margin-top: 1.6rem;
+  }
+}

@@ -1,0 +1,51 @@
+.contact_form textarea,
+.contact_form input {
+  width: 24rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: solid 0.05rem #d2d2d2;
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+
+.contact_form textarea {
+  height: 8.5rem;
+  padding: 10px;
+}
+
+.contact_form label {
+  font-family: Roboto-Bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  white-space: nowrap;
+  color: #1b1b1b;
+}
+
+.contact_form .c_input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+}
+
+.contact_form button {
+  width: 11.35rem;
+  height: 2.95rem;
+  background-color: #559d6b;
+  border-radius: 1.45rem;
+  font-family: Roboto-Bold;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
+
+@media screen and (max-width:768px) {
+
+  .contact_form textarea,
+  .contact_form input {
+    width: 16rem;
+  }
+}

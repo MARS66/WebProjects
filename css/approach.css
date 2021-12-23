@@ -1,0 +1,136 @@
+.page_dcs p {
+  font-size: 1.1rem;
+}
+
+.Keyword_ranking {
+  margin-top: -5rem;
+  padding-bottom: 5rem;
+}
+
+.ranking {
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #232e30;
+}
+
+.ranking li::before {
+  content: '●';
+  font-family: SimSun;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #65a87d;
+  margin-right: 0.3rem;
+}
+
+.imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.imgbox img {
+  max-width: 100%;
+}
+
+.How_does p {
+  font-family: Roboto-Light;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  color: #333333;
+}
+
+.hows {
+  margin-top: 5.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.5rem;
+}
+
+.hows li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto-Light;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #232e30;
+}
+
+
+
+.hows li img {
+  height: 3rem;
+  margin-bottom: 1rem;
+  transition: transform ease 0.3s;
+}
+
+.hows li:hover img {
+  transform: scale(1.1);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p {
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  white-space: pre-line;
+  color: #333333;
+  margin-bottom: 2.4rem;
+}
+
+.contact_form label {
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+}
+
+.contact_form button {
+  margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width:768px) {
+  .Keyword_ranking {
+    margin-top: 0;
+    padding-bottom: 5rem;
+  }
+
+  .hows {
+    margin-top: 5.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+
+  .contact p {
+    white-space: normal;
+    font-size: 1.2rem;
+  }
+
+  .imgbox img {
+    width: 50%;
+  }
+}

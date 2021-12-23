@@ -1,0 +1,138 @@
+.Why_Lumospace {
+
+  margin-top: -5rem;
+}
+
+.page_dcs p {
+  font-size: 1.1rem;
+}
+
+.Why_Lumospace_content {
+  font-family: Roboto-Light;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  white-space: pre-line;
+  color: #232e30
+}
+
+.Why_Lumospace_content a {
+  font-family: Roboto-Bold;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p {
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  white-space: pre-line;
+  color: #333333;
+  margin-bottom: 2.4rem;
+}
+
+.contact_form label {
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+}
+
+.contact_form button {
+  margin-top: 2rem;
+}
+
+.How_does {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.How_does .content {
+  font-family: Roboto-Medium;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  white-space: pre-line;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #232e30;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countries p {
+  font-family: Roboto-Light;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #232e30;
+}
+
+.countries .img {
+  padding: 1rem 0;
+}
+
+.countries .img img {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.countries .img p {
+  font-family: Roboto-Light;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  white-space: pre-line;
+  color: #232e30;
+}
+
+.countries .img p a {
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0rem;
+  color: #232e30;
+  border-bottom: 0.2rem solid #232e30;
+}
+
+.countries .img p a:hover {
+  color: var(--active);
+  border-color: var(--active);
+}
+
+@media screen and (max-width:768px) {
+  .Why_Lumospace {
+    margin-top: 0;
+  }
+
+  .contact p {
+    white-space: normal;
+    font-size: 1.2rem;
+  }
+
+  .How_does {
+    flex-direction: column;
+  }
+
+  .How_does img {
+    max-width: 100%;
+  }
+}

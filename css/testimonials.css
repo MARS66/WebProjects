@@ -1,0 +1,138 @@
+.Testimonials {
+  margin: 5rem 0;
+}
+
+.swiper_container_outer {
+  margin: 0 auto;
+  width: 43.05rem;
+  position: relative;
+}
+
+.swiper_container_outer::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 6.2rem);
+  width: 100%;
+  height: 12.4rem;
+  background-color: #ffffff;
+  box-shadow: 0rem 0.4rem 0.5rem 0rem rgba(0, 0, 0, 0.02);
+}
+
+.swiper-container {
+  padding: 5rem 2rem;
+  width: 33rem;
+  position: relative;
+  z-index: 5;
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 0 2.3rem;
+  text-align: center;
+  box-shadow: 0rem 0.8rem 1.05rem 0rem rgba(0, 0, 0, 0.05);
+}
+
+
+.quotes_f {
+  display: block;
+  width: 2.8rem;
+  margin-top: -1rem;
+}
+
+.quotes_r {
+  display: block;
+  width: 2.8rem;
+  margin-left: auto;
+  margin-bottom: -1rem;
+}
+
+.swiper-slide .info {
+  padding: 0 3rem;
+}
+
+.swiper-slide .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide .avatar img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  margin-top: -3.2rem;
+}
+
+.swiper-slide .avatar h4 {
+  font-family: Roboto-Regular;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.296rem;
+  letter-spacing: 0rem;
+  color: #000000;
+}
+
+.swiper-slide p {
+  font-family: Roboto-Regular;
+  font-size: 0.75rem;
+  font-weight: normal;
+  white-space: pre-line;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #000000;
+  padding: 2.23rem 0;
+}
+
+.more {
+  padding-bottom: 1rem;
+}
+
+.more a {
+  font-family: Roboto-Regular;
+  text-decoration: underline;
+  font-size: 1.019rem;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #559d6b;
+}
+
+.swiper-button-white {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #e3e3e3;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-white:hover {
+  background-color: var(--active);
+}
+
+.swiper-button-white::after {
+  font-size: 1rem;
+}
+
+@media screen and (max-width:768px) {
+
+  .swiper_container_outer {
+    width: unset;
+  }
+
+  .swiper_container_outer::after {
+    display: none;
+  }
+
+  .swiper-container {
+    width: unset;
+    box-sizing: border-box;
+  }
+
+  .swiper-slide {
+    padding: 0 1rem;
+  }
+}
