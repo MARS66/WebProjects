@@ -1,23 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./static/volare.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALL WAY</title>
+    <link rel="stylesheet" href="./static/icons/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+      <!-- header -->
+      <header>
+        <div class="nav_container">
+            <a href="#">
+              <img class="logo" src="./static/images/logo.png" alt="" srcset="">
+            </a>
+                                                    
+            <ul class="nav_content mobile_nav">
+              <li><a href="#">首页</a></li>
+              <li><a href="#">关于我们</a></li>
+              <li><a href="#">主营业务</a></li>
+              <li><a href="#">企业新闻</a></li>
+              <li><a href="#">加入我们</a></li>
+              <li><a href="#">联系我们</a></li>
+              <li><a href="#"><i class="iconfont icon-search"></i> 我要找...</a></li>
+              <li>
+                <a href="#">
+                  <i class="iconfont icon-language"></i>
+                  中文
+                  <i class="iconfont icon-jiantou_liebiaozhankai_o"></i>
+                </a>
+             </li>
+            </ul>
+            <span class="mobile_menu"></span>
+        </div>
+      </header>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="./static/volare.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>volare</title>
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-  <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+      <main>
+        <!-- top swiper -->
+        <div class="swiper  top_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(./static/images/index_bg.png);">
+              <div>
+                <div class="title">
+                  <h3>聚焦大宗贸易</h3>
+                  <h3>逐步多元布局</h3>
+                </div>
+                <div class="content">
+                  <p>以供应链服务为核心, 并为客户深度整合、提供上下游资源, </p>
+                  <p>是贸易伙伴理想的一站式服务商</p>
+                </div>
+                <button>立即咨询 <i class="iconfont icon-a-xingzhuang6"></i></button>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(./static/images/index_bg.png);">
+              <div>
+                <div class="title">
+                  <h3>聚焦大宗贸易</h3>
+                  <h3>逐步多元布局</h3>
+                </div>
+                <div class="content">
+                  <p>以供应链服务为核心, 并为客户深度整合、提供上下游资源, </p>
+                  <p>是贸易伙伴理想的一站式服务商</p>
+                </div>
+                <button>立即咨询 <i class="iconfont icon-a-xingzhuang6"></i></button>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(./static/images/index_bg.png);">
+              <div>
+                <div class="title">
+                  <h3>聚焦大宗贸易</h3>
+                  <h3>逐步多元布局</h3>
+                </div>
+                <div class="content">
+                  <p>以供应链服务为核心, 并为客户深度整合、提供上下游资源, </p>
+                  <p>是贸易伙伴理想的一站式服务商</p>
+                </div>
+                <button>立即咨询 <i class="iconfont icon-a-xingzhuang6"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Achievement -->
+        <div class="flat_r Achievement">
+            <div class="Achievement_r">
+              <span class="Achievement_i yellow">
+                <h3 >2009</h3>
+                <p>公司成立时间</p>
+              </span>
+              <span class="Achievement_i Achievement_l green">
+                <h3 class="after">500</h3>
+                <p>集团员工规模</p>
+              </span>
+            </div>
+            <div class="Achievement_left">
+              <span class="Achievement_i green">
+                <h3  class="after">9000</h3>
+                <p>公司成立时间</p>
+              </span>
+              <span class="Achievement_i yellow">
+                <h3  class="after">100</h3>
+                <p>公司成立时间</p>
+              </span>
+              <span class="Achievement_i blank">
+                <h3  class="after">1000</h3>
+                <p>公司成立时间</p>
+              </span>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="flat_r about">
+          <div class="about_item have_after">
+            <div class="text">
+              <div class="title">
+                <span class="en">FULLWAY GROUP</span>
+                <span class="ch">我们是谁</span>
+              </div>
+              <P>菲律宾富为集团（前身为Sany steel Marketing 三一钢铁市场），由2009年发展至今，形成四大主要业务板块：供应链服务、地产运营、工业及投资；以供应链服务为核心的富为集团，诚挚为客户提供各类基础建材（包含但不限于胶合板、钢铁、水泥等）和各品类大米，并为客户深度整合、提供上下游资源，是贸易伙伴理想的一站式服务商	...</P>
+              <a href="" class="look_more">
+                查看详情 <i class="iconfont icon-right"></i>
+              </a>
+            </div>
+
+            <div class="imgbox imgbox_1">
+              <img src="./static/images/about_p.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="service">
+          <div class="flat_r">
+            <img src="./static/images/Davao.png" alt="">
+            <div class="text">
+              
+              <div class="title">
+                <span class="en">Service Network</span>
+                <span class="ch">服务网络</span>
+              </div>
+              <p>富为（菲律宾）控股集团，总部位于菲律宾，
+                我们服务的客户遍布全国。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="green">
+          <div class="container">
+            <div class="for_you">
+              <div class="dec">
+                <div class="title">
+                  <span class="en">What can we do for you</span>
+                  <span class="ch">我们能为您提供什么</span>
+                </div>
+                <p>以供应链服务为核心的富为集团，诚挚为客户提供各类基础建材（包含但不限于胶合板、钢铁、水泥等）和各品类大米，并为客户深度整合、提供上下游资源，是贸易伙伴理想的一站式服务商</p>
+              </div>
+            
+              <div class="for_you_swiper">
+                <div class="swiper-prev iconfont icon-left"></div>
+                
+                <div class="swiper service_swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide" style="background-image: url(./static/images/serve1.png);">
+                         <h3>供应链
+                          服务板块</h3>
+                         <div class="btns">
+                          <text>查看详情</text>
+                          <a href="" class="iconfont icon-right"></a>
+                         </div>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url(./static/images/serve2.png);">
+                         <h3>地产
+                          开发地图&项目说明</h3>
+                         <div class="btns">
+                          <text>查看详情</text>
+                          <a href="" class="iconfont icon-right"></a>
+                         </div>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url(./static/images/serve3.png);">
+                         <h3>投资
+                          服务板块</h3>
+                         <div class="btns">
+                          <text>查看详情</text>
+                          <a href="" class="iconfont icon-right"></a>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="swiper-next iconfont icon-right"></div>
+              </div>
+            </div>           
+          </div>
+        </div>
+        <div class="gray">
+          <div class="container">
+            <div class="why">
+              <div class="title">
+                <span class="en">Why choose us</span>
+                <span class="ch">为什么选择我们</span>
+              </div>
+              <div class="why_content">
+                 <div class="circle">
+                   <img src="./static/images/chahua.png" alt="">
   
-</body>
-<script src="./js/jquery.js"></script>
-<script src="./js/common.js"></script>    
+                    <div class="top">
+                     <div class="p_r">
+                       <div class="info_content">
+                         <p>公司成立于2009年，已有10多年品牌沉淀</p>
+                         <h3>品牌沉淀</h3>
+                       </div>
+                     </div>
+                     <span class="iconfont icon-a-xingzhuang17"></span>
+                    </div>
+
+                    <div class="bottom">
+                     <span class="iconfont icon-a-xingzhuang17"></span>
+                     <div class="p_r">
+                        <div class="info_content">
+                          <h3>品牌沉淀</h3>
+                          <p>公司成立于2009年，已有10多年品牌沉淀</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="left">
+                     <div class="P_R">
+                        <div class="info_content">
+                          <h3>品牌沉淀</h3>
+                          <p>公司成立于2009年，已有10多年品牌沉淀</p>
+                        </div>
+                      </div>
+                      
+                     <span class="iconfont icon-a-xingzhuang17"></span>
+                    </div>
+
+                    <div class="right">
+                     <span class="iconfont icon-a-xingzhuang17"></span>
+                     <div class="P_R">
+                        <div class="info_content">
+                          <h3>品牌沉淀</h3>
+                          <p>公司成立于2009年，已有10多年品牌沉淀</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+               </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <!-- news -->
+
+        <div class="container">
+          <div class="news">
+            <div class="title">
+              <span class="en">News center</span>
+              <span class="ch">新闻中心</span>
+            </div>
+            <ul class="news_nav">          
+              <li><a href="" class="active">公司新闻</a></li>
+              <li><a href="">行业新闻</a></li>
+            </ul>       
+            <div class="for_you_swiper">
+              <div class="news_swiper_prev mobile_hidden iconfont icon-left"></div>
+              
+              <div class="swiper news_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide new">
+                       <div class="news_img">
+                        <img src="./static/images/new.png" alt="" srcset="">
+                       </div> 
+                       <div class="new_content">
+                         <div class="new_title">
+                          <h3>如何提高镀锌角钢的使用寿命?</h3>
+                          <p>2021-12-20</p>
+                         </div>
+                         <p class="text">在热镀锌角钢的生产过程中，应大力发展涂层钢管。其主要作用是防止管道腐蚀，延长热镀锌角钢的使用寿命。除了延长热镀锌角钢的使用寿命外，还可以提高其平整度，降低一定的阻力和灰尘，减少热镀锌角钢的精整次数...</p>
+                         <a href="" class="look_more">
+                          查看详情 <i class="iconfont icon-right"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="news_swiper_next mobile_hidden iconfont icon-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 加入我们 -->
+
+        <div class="join_us b_i_c" style="background-image: url(./static/images/join_us.png);">
+          <div class="container">
+            <div class="title">
+              <span class="en">Join Us</span>
+              <span class="ch">加入我们</span>
+            </div>
+            <div class="content">
+              <p>你准备好迎接新的挑战了吗？</p>
+              <p>我们为即将步入社会的学生和社会各界人士提供多种多样的机会，</p>
+              <p>每天因我而不同！</p>
+            </div>
+            <button>了解更多</button>
+          </div>
+        </div>
+
+      <!-- Leave a message -->
+
+      <div class="container">
+        <div class="message">
+          <div class="title">
+            <span class="en">Leave a message</span>
+            <span class="ch">给我们留言</span>
+          </div>
+          <p class="tips">欢迎给我们留言，我们将第一时间与您取得联系！</p>
+          <form action="">
+            <div class="input_inline">
+              <input type="text" placeholder="姓名*">
+              <input type="text" placeholder="邮箱">
+            </div>
+            <div class="input_inline">
+              <input type="text" placeholder="电话*">
+              <input type="text" placeholder="Q Q">
+            </div>
+            <div class="input_inline">
+              <input type="text" placeholder="地址">
+            </div>
+            
+            <textarea name="" id="" cols="30" rows="10" placeholder="我想说*"></textarea>
+           <button type="submit">了解更多</button>
+          </form>
+        </div>
+      </div>
+
+      </main>
+      
+    <!-- footer -->
+      <footer>
+       <div class="container footer_content">
+        <form action="">
+          <span class="lable">您是否想要获取最新的资讯
+            欢迎给留下您的邮箱!</span>
+            <div class="input">
+              <i class="iconfont icon-a-xingzhuang22"></i>
+              <input type="text" placeholder="请输入邮箱...">
+              <button type="submit" class="iconfont icon-a-xingzhuang26"></button>
+            </div>
+        </form>
+
+        <div class="links">
+          <div class="item">
+            <h3>关于我们</h3>
+            <ul>
+              <li><a href="#">文字简介</a></li>
+              <li><a href="#">企业文化</a></li>
+              <li><a href="#">集团展望</a></li>
+              <li><a href="#">发展历程</a></li>
+              <li><a href="#">服务网络</a></li>
+              <li><a href="#">企业风采</a></li>
+            </ul>
+          </div>
+
+          
+          <div class="item">
+            <h3>主营业务</h3>
+            <ul>
+              <li><a href="#">供应链服务</a></li>
+              <li><a href="#">地产服务</a></li>
+              <li><a href="#">投资服务</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>新闻中心</h3>
+            <ul>
+              <li><a href="#">公司新闻</a></li>
+              <li><a href="#">行业新闻</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>加入我们</h3>
+            <ul>
+              <li><a href="#">人才机制</a></li>
+              <li><a href="#">岗位一览</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>联系我们</h3>
+            <ul>
+              <li><a href="#">联系方式</a></li>
+              <li><a href="#">在线留言</a></li>
+            </ul>
+          </div>
+          <div class="scan">
+            <img src="./static/images/scanCode.png" alt="">
+            <p>微信公众号</p>
+          </div>
+        </div>
+       </div> 
+       <div class="line"></div>
+       <div class="container">
+          <p class="copyRight">Copyright © 2021.菲律宾富为集团      备案号：*************</p>
+       </div>
+      </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/common.min.js"></script>  
+    <script src="./js/swiper-bundle.min.js"></script>  
+    <script>
+      var top_swiper = new Swiper('.top_swiper', {
+        loop: true, 
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
+        speed:800,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      })
+      var service_swiper = new Swiper ('.service_swiper', {
+        loop: true, 
+        speed:500,
+        autoplay: {
+          delay: $(window).width()>768?3000:2000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
+        slidesPerView:$(window).width()>768?3:1,
+        spaceBetween : 30,
+        navigation: {
+          nextEl: '.swiper-next',
+          prevEl: '.swiper-prev',
+        },
+      })  
+      var news_swiper = new Swiper ('.news_swiper', {
+        loop: true, 
+        speed:500,
+        autoplay: {
+          delay: $(window).width()>768?3000:2000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
+        slidesPerView:1,
+        navigation: {
+          nextEl: '.news_swiper_next',
+          prevEl: '.news_swiper_prev',
+        },
+      })  
+    </script>
+  </body>
+</html>

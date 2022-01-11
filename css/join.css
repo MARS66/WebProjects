@@ -1,0 +1,258 @@
+.container {
+  max-width: 60rem;
+}
+
+.talent {
+  padding-top: 5rem;
+}
+
+.talent p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #5f5f5f;
+  padding: 3rem 0;
+}
+
+.talent img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.haveAfter {
+  margin-top: -4rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.haveAfter::after {
+  content: '';
+  width: 60%;
+  height: 30.85rem;
+  background-color: #ccbe7d;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.haveAfter li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.haveAfter li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.haveAfter li:not(:last-child) {
+  padding-bottom: 5rem;
+}
+
+.haveAfter li .imgbox,
+.haveAfter li p {
+  flex: 1;
+}
+
+.haveAfter li:hover img {
+  transform: scale(1.1);
+}
+
+.haveAfter li p {
+  padding: 2.8rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+  white-space: pre-line;
+}
+
+.b_i_c {
+  height: 32.5rem;
+}
+
+.b_i_c p {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.job {
+  padding-top: 5rem;
+}
+
+.job_box {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 0 -4rem;
+}
+
+.thumbs {
+  flex: 1;
+  height: 10rem;
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-slide h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2rem;
+  color: #054e43;
+  padding-bottom: 0.5rem;
+}
+
+.job_box .swiper-slide .iconfont {
+  color: #fff;
+  font-size: 1rem;
+  transition: font-size 0.3s ease;
+}
+
+.swiper-slide span {
+  padding: 0.2rem 1rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: #054e43;
+  border-radius: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.swiper-slide:hover .iconfont {
+  font-size: 1.5rem;
+}
+
+.gallery-next {
+  text-align: end;
+}
+
+.job_box .iconfont {
+  width: 4rem;
+  color: #ccbe7d;
+  font-size: 0.8rem;
+}
+
+.send {
+  margin-top: -2rem;
+}
+
+
+.send_content {
+  padding: 3rem;
+  background-color: #055d50;
+}
+
+.send_content .text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.send_content .text p {
+  font-size: 0.7rem;
+  white-space: pre-line;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #fffffe;
+}
+
+.send_btn {
+  border-top: 1px solid rgba(255, 255, 255, 0.034);
+  margin-top: 2rem;
+  padding-top: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #fffffe;
+}
+
+.send_btn button {
+  color: var(--theme);
+  background-color: var(--active);
+  border-color: var(--theme);
+}
+
+.send_btn button .iconfont {
+  border-color: var(--theme);
+  color: var(--theme);
+}
+
+@keyframes btn_hover {
+  to {
+    background-color: var(--theme);
+    border-color: var(--active);
+    color: var(--active);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .haveAfter li {
+    flex-direction: column !important;
+  }
+
+  .haveAfter li p {
+    padding: 1rem 0;
+  }
+
+  .job_box {
+    margin: 0;
+  }
+
+  .haveAfter {
+    padding-top: 6rem;
+  }
+
+  .b_i_c {
+    height: 25.5rem;
+  }
+
+  .send_content {
+    padding: 2rem 1rem;
+  }
+
+  .send_content .text {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .send_btn {
+    flex-direction: column;
+  }
+
+  .send_btn button {
+    margin-top: 1rem;
+  }
+
+  .send_content .text p {
+    line-height: 2rem;
+  }
+}

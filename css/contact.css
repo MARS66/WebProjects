@@ -1,0 +1,118 @@
+.container {
+  max-width: 60rem;
+}
+
+.message {
+  padding: 5rem 0;
+}
+
+.message .ch {
+  color: #fff;
+}
+
+.input_inline {
+  display: flex;
+  align-items: center;
+}
+
+.input_inline input {
+  flex: 1;
+  height: 2.25rem;
+  border: solid 0.05rem #eeeeee;
+  background-color: #fff;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+.tips {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.input_inline input:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.message textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid 0.05rem #eeeeee;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.message .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message button {
+  height: 2.5rem;
+  background-color: #ccbe7d;
+  padding: 0 3rem;
+  margin-top: 3rem;
+}
+
+.map img {
+  width: 100%;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 0;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #5f5f5f;
+}
+
+.contact .iconfont {
+  color: #054e43;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  transition: font-size 0.3s ease;
+  padding-bottom: 0.8rem;
+}
+
+.contact li:hover .iconfont {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width:768px) {
+  .input_inline {
+    flex-direction: column;
+  }
+
+  .input_inline input {
+    box-sizing: border-box;
+    width: 100%;
+    flex: unset;
+    height: 3rem;
+    border: solid 0.05rem #eeeeee;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .input_inline input:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

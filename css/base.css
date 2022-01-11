@@ -5,7 +5,10 @@
 }
 
 :root {
-  --active: rgb(0, 68, 191);
+  /* 主体颜色 */
+  --theme: #054e43;
+  --active: #ccbe7d;
+  --button-hover: #ccbe7d;
 }
 
 
@@ -54,6 +57,11 @@ html {
   }
 }
 
+@media (min-width: 1600px) {
+  .container {
+    width: 1400px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -68,15 +76,28 @@ a:focus {
 }
 
 button {
-  padding: 0.4rem 0.5rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
   border-radius: 0.2rem;
   margin: 0;
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #ffffff;
-  color: #171717;
-  border: 1px solid transparent
+  background: none;
+  color: #fff;
+  border: 1px solid var(--active);
+  display: flex;
+  justify-content: center;
+  padding-left: 2rem;
+  overflow: hidden;
+}
+
+button .iconfont {
+  border-left: 1px solid var(--active);
+  width: 3rem;
+  margin-left: 2rem;
+  color: #ccbe7d;
+  transition: all .3s ease;
 }
 
 .default:hover {
@@ -87,10 +108,19 @@ button.iconfont::before {
   margin-right: 1rem;
 }
 
+button:hover .iconfont,
 button:hover {
-  border-color: var(--active);
-  background-color: var(--button-hover);
+  animation: btn_hover 0.3s ease forwards alternate;
 }
+
+@keyframes btn_hover {
+  to {
+    background-color: var(--button-hover);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+}
+
 
 .primary {
   background-color: var(--active);
@@ -218,6 +248,10 @@ li {
   }
 }
 
+.mobile_menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .container {
 
@@ -243,6 +277,7 @@ li {
   }
 
   .mobile_menu {
+    display: block;
     width: 2rem;
     height: 1.6rem;
     display: flex;
@@ -251,7 +286,7 @@ li {
     z-index: 10;
   }
 
-  .mobile_menu li {
+  .mobile_menu span {
     width: 100%;
     flex: unset;
     height: 0.15rem;
@@ -261,15 +296,15 @@ li {
     transform-origin: right;
   }
 
-  .menu_active .fist {
+  .menu_active .top_line {
     transform: rotate(-45deg);
   }
 
-  .menu_active .second {
+  .menu_active .center_line {
     opacity: 0;
   }
 
-  .menu_active .third {
+  .menu_active .bottom_line {
     transform: rotate(45deg);
   }
 
