@@ -1,0 +1,115 @@
+.book_layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
+}
+
+.row-reverse {
+  grid-template-columns: 1fr 2fr;
+}
+
+.book_page .b_i_c {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 4.75rem;
+  overflow: hidden;
+}
+
+.book_page .b_i_c img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.book_page .img_text {
+  border: solid 0.25rem #ffffff;
+  padding: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.book_page .img_text a {
+  font-family: MyriadPro-Bold;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.book_page .img_text p {
+  font-family: MinionPro;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.book_layout .info {
+  padding: 2.5rem 4.3rem;
+  background-color: #ff9e00;
+  position: relative;
+}
+
+.book_layout .info p {
+  white-space: pre-line;
+  font-family: MyriadPro-Regular;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.9rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.book_layout .info::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 1.65rem;
+  height: 1.65rem;
+  background-image: linear-gradient(135deg, #ffc971 50%, #fefefe 1px, #fefefe);
+}
+
+.book_page:hover img {
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width:768px) {
+  .book_layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .book_page .b_i_c {
+    padding: 2rem;
+  }
+
+  .book_page .b_i_c img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .book_page .img_text {
+    padding: 2rem;
+  }
+
+  .book_layout .info {
+    padding: 2rem;
+  }
+}

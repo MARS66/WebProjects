@@ -1,0 +1,12 @@
+.page_title {
+  color: #b760a6;
+}
+
+.left-box {
+  display: flex;
+  align-items: center;
+}
+
+.book_layout {
+  padding-bottom: 1.5rem;
+}

@@ -4,12 +4,21 @@
  * @Author: yukaiwei
  * @Date: 2021-07-07 09:50:04
  * @LastEditors: yukaiwei
- * @LastEditTime: 2021-12-20 15:25:48
+ * @LastEditTime: 2022-01-07 11:48:06
  */
-$(function (params) {
+$(function () {
+  // 初始值
   var wTop=$(window).height();
-  window.onresize=()=>{
-   var wTop=$(window).height();
+  window.onresize = () => { wTop = $(window).height() };
+
+  // 显示移动导航按钮
+  function showMobileMenu(){
+    if ($(window).width() > 768 && $('.mobile_menu').children.length) return;
+    $('.mobile_menu').append(`
+      <span class="top_line"></span>
+      <span class="center_line"></span>
+      <span class="bottom_line"></span>
+    `)
   }
   
   // 移动端到航
@@ -19,17 +28,12 @@ $(function (params) {
     }else{
       $(this).addClass('menu_active')
     }
-    $('.nav .nav_items').animate({
+    $('.mobile_nav').animate({
       width:'toggle',
     },300)
   })
 
-
-  // 鼠标滚动动画
-  $(window).scroll(()=>{
-    animation();
-  });
-
+  //入场动画
   function animation(){
     var dTop = $(document).scrollTop();
     $(".animation:not(.ani)").each(function(){
@@ -38,6 +42,13 @@ $(function (params) {
       }
     });
   }
+  // 鼠标滚动动画
+  $(window).scroll(()=>{
+    animation();
+  });
+
+  // 初始执行
   animation();
+  showMobileMenu();
 })
 

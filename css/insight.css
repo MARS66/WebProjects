@@ -1,0 +1,158 @@
+.page_title {
+  color: #f49e1d;
+  padding-bottom: 3rem;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 1rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.search {
+  background-color: #6dcbd6;
+  padding: 2rem;
+}
+
+.search_box {
+  display: grid;
+  grid-template-columns: 3fr 1.6fr;
+  gap: 5.7rem;
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid #eee;
+}
+
+.search_box h3 {
+  font-family: MyriadPro-Bold;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  color: #000000;
+  padding-bottom: 1.8rem;
+}
+
+.search_box p {
+  font-family: MyriadPro-Regular;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #5f5f5f;
+  text-align: justify;
+}
+
+.search h3 {
+  font-family: MyriadPro-Bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.09rem;
+  color: #ffffff;
+  padding-bottom: 1.8rem;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border: solid 0.05rem #ffffff;
+}
+
+.search form input {
+  width: 0;
+  flex: 1;
+  color: #ffffff;
+  font-family: MyriadPro-Regular;
+  font-size: 0.8rem;
+}
+
+.search form .iconfont {
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.search form .iconfont:hover {
+  color: #f49e1d;
+}
+
+.insight_list {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.insight_list li:hover img {
+  transform: scale(1.1);
+}
+
+.insight_list .info {
+  padding-right: 2rem;
+}
+
+.insight_list .info h4 {
+  font-family: MyriadPro-Bold;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.01rem;
+  color: #000000;
+  padding: 1rem 0;
+}
+
+.insight_list .info p {
+  font-family: MyriadPro-Regular;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.9rem;
+  letter-spacing: 0.01rem;
+  text-align: justify;
+  color: #5f5f5f;
+}
+
+.insight_list .info a {
+  display: block;
+  padding-top: 1.2rem;
+  font-family: MyriadPro-Regular;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.9rem;
+  letter-spacing: 0.01rem;
+  color: #f49e1d;
+}
+
+.insight_list .info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+  .insight_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .search_box {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

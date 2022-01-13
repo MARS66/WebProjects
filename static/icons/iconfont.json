@@ -1,0 +1,107 @@
+{
+  "id": "3133073",
+  "name": "INsense",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "27057075",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "27057077",
+      "name": "view",
+      "font_class": "view",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "27159084",
+      "name": "play",
+      "font_class": "a-xingzhuang58",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "5387588",
+      "name": "箭头_向下",
+      "font_class": "jiantou_xiangxia",
+      "unicode": "eb0a",
+      "unicode_decimal": 60170
+    },
+    {
+      "icon_id": "27131444",
+      "name": "多边形 1",
+      "font_class": "a-duobianxing1",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "27131445",
+      "name": "形状 47",
+      "font_class": "a-xingzhuang47",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "27131446",
+      "name": "形状 6",
+      "font_class": "a-xingzhuang6",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "27131447",
+      "name": "形状 49",
+      "font_class": "a-xingzhuang49",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "27131448",
+      "name": "形状 57",
+      "font_class": "a-xingzhuang57",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "27131449",
+      "name": "形状 59 拷贝",
+      "font_class": "a-xingzhuang59kaobei",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "27131450",
+      "name": "形状 5",
+      "font_class": "a-xingzhuang5",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "27131451",
+      "name": "形状 48",
+      "font_class": "a-xingzhuang48",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "27131452",
+      "name": "形状 59",
+      "font_class": "a-xingzhuang59",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "27131453",
+      "name": "形状 50",
+      "font_class": "a-xingzhuang50",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    }
+  ]
+}

@@ -5,13 +5,17 @@
 }
 
 :root {
-  --active: rgb(0, 68, 191);
+  /* 主体颜色 */
+  --theme: #f49e1d;
+  --active: #f49e1d;
+  --button-hover: #f49e1d;
 }
 
 
 html {
   font-size: 16px;
   font-family: SourceHanSansCN-Light;
+  background: #FEFEFE;
 }
 
 @media (min-width: 768px) {
@@ -54,6 +58,11 @@ html {
   }
 }
 
+@media (min-width: 1600px) {
+  .container {
+    width: 1419px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -64,33 +73,19 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: var(--active);
+  color: #ffffff;
 }
 
 button {
   padding: 0.4rem 0.5rem;
-  border-radius: 0.2rem;
   margin: 0;
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #ffffff;
-  color: #171717;
   border: 1px solid transparent
 }
 
-.default:hover {
-  color: var(--active);
-}
 
-button.iconfont::before {
-  margin-right: 1rem;
-}
-
-button:hover {
-  border-color: var(--active);
-  background-color: var(--button-hover);
-}
 
 .primary {
   background-color: var(--active);
@@ -251,25 +246,25 @@ li {
     z-index: 10;
   }
 
-  .mobile_menu li {
+  .mobile_menu span {
     width: 100%;
     flex: unset;
     height: 0.15rem;
     border-radius: 0.075rem;
-    background-color: var(--active);
+    background-color: #ffffff;
     transition: transform ease 0.3s;
     transform-origin: right;
   }
 
-  .menu_active .fist {
+  .menu_active .top_line {
     transform: rotate(-45deg);
   }
 
-  .menu_active .second {
+  .menu_active .center_line {
     opacity: 0;
   }
 
-  .menu_active .third {
+  .menu_active .bottom_line {
     transform: rotate(45deg);
   }
 
