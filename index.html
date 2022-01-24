@@ -1,23 +1,386 @@
+<!--
+ * @Description: 
+ * @version: 1.0
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>普瑞金</title>
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/error-page.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/error-page-responsive.css">
+    <link rel="stylesheet" href="./assets/icons/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+    <header>
+      <a href=""><img src="./assets/images/LOGO.png" alt=""></a>
+      <ul class="mobile_nav"> 
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">关于普瑞金</a></li>
+        <li><a href="">临床研究</a></li>
+        <li><a href="">研发管线</a></li>
+        <li><a href="">新闻中心</a></li>
+        <li><a href="">联系我们</a></li>
+        <li class="pc_hidden"><a href="">EN</a></li>
+      </ul>
+    
+      <div class="mobile_menu pc_hidden"></div>
+      <div class="search_outer">
+        <form action="" class="search">
+          <input type="text" placeholder="搜索...">
+          <button class="iconfont icon-sousuo"></button>
+        </form>
+        <a class="mobile_hidden">EN</a>
+      </div>
+    </header>
+    
+    <main class="swiper outer_swiper">
+      <div class="swiper-wrapper">
+        <section class="page_active swiper-slide">
+          <div class="swiper top_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper_bg" src="./assets/images/swiper.png" alt="" srcset="">
+                <div class="swiper_content">
+                  <img class="sw_animation" src="./assets/images/LOGO.png" alt="">  
+                  <span class="sw_animation name">普瑞金</span>
+                  <h3 class="sw_animation">创新型细胞药物领军企业</h3>
+                  <button class="sw_animation">了解更多<i class="iconfont icon-youjiantou1"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper_bg" src="./assets/images/about.png" alt="" srcset="">
+                <div class="swiper_content">
+                  <img class="sw_animation" src="./assets/images/LOGO.png" alt="">  
+                  <span class="sw_animation name">普瑞金</span>
+                  <h3 class="sw_animation">创新型细胞药物领军企业</h3>
+                  <button class="sw_animation">了解更多 <i class="iconfont icon-youjiantou1"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next mobile_hidden"></div>
+            <div class="swiper-button-prev mobile_hidden"></div>
+            <div class="mouse">
+              <span class="myswiper-pagination"></span>
+              <i class="iconfont  icon-shubiao"></i>
+              <i class="iconfont  icon-xiashuangjiantou"></i>
+            </div>
+          </div>
+        </section>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="./static/volare.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>volare</title>
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-  <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-  
-</body>
-<script src="./js/jquery.js"></script>
-<script src="./js/common.js"></script>    
+        <section  class="swiper-slide b_i_c" data-color="#fff" style="background-image: url(./assets/images/index_about.png);">
+          <div class="container about_outer">
+            <div class="about">
+              <h3 class="animation">关于普瑞金</h3>
+              <div class="about_content animation">
+                <p>深圳普瑞金生物药业有限公司成立于2012年，为国家中小企业发展基金投资企业、中科院旗下国科嘉和基金投资企业、海尔医疗、华邦健康等知名基金投资企业。</p>
+                <p>公司核心团队来自中国人民解放军军事医学科学院、多伦多大学、美国FDA等知名机构与公司，拥有一支学术背景深厚、实践经验丰富的科研及产业化团队，建有基因编辑平台、病毒和细胞大规模制备平台、纳米抗体筛选平台等新型生物药的小试、中试放大体系，研发投入过亿元，实验室总面积约1万平米。</p>
+                <p>公司专注于细胞与基因治疗药物的研发与推广，参与起草了中检院2018年6月发布的《CAR-T细胞质量控制检测研究及非临床评价考虑要点》这一国家药物标准。用于治疗多发性骨髓瘤的CAR-T细胞药物已作为I类新药获得NMPA临床批件，现正开展I期临床实验；其他针对肿瘤、自身免疫病等适应症的各产品管线呈阶梯式发展，后备技术丰富，公司发展前景广阔；</p>
+                <p>展望未来，公司将以研发国人用得起的生物药为己任，进一步加强源头研发、申请和拥有一批高价值国际专利，保持和扩大在行业内的领先优势，抢占世界生物医药技术制高点，努力跻身国际一流新型生物药公司行列。</p>
+              </div>
+              <button class="animation">了解更多<i class="iconfont icon-youjiantou1"></i></button>
+            </div>
+          </div>
+          <div class="grade">
+            <ul class="container">
+              <li class="animation l_to_r">
+                <h3><span class="EnMedium">2025</span><text>年</text></h3>
+                <p>公司成立于</p>
+              </li>
+              <li class="animation l_to_r">
+                <h3><span>1</span><text>亿元+</text></h3>
+                <p>研发投入</p>
+              </li>
+              <li class="animation r_to_l">
+                <h3><span class="EnMedium">1000</span><text>㎡</text></h3>
+                <p>实验室总面积</p>
+              </li>
+              <li class="animation r_to_l">
+                <h3><span class="EnMedium">100</span><text>+</text></h3>
+                <p>研发团队</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="waves p_r swiper-slide">
+          <div class="product_box">
+            <div class="container">
+              <div class="section_title animation">
+                <h3>产品管线</h3>
+                <a class="more">MORE <i class="iconfont icon-jiajia"></i></a>
+              </div>
+                <ul class="products animation">
+                  <li>
+                    <img src="./assets/images/product.png" alt="">
+                    <span class="name">CART-T细胞</span>
+                    <a href="" class="iconfont icon-youjiantou1"></a>
+                  </li>
+                  <li>
+                    <img src="./assets/images/product1.png" alt="">
+                    <span class="name">CART-T细胞</span>
+                    <a href="" class="iconfont icon-youjiantou1"></a>
+                  </li>
+                  <li >
+                    <img src="./assets/images/product2.png" alt="">
+                    <span class="name">CART-T细胞</span>
+                    <a href="" class="iconfont icon-youjiantou1"></a>
+                  </li>
+                  <li >
+                    <img src="./assets/images/product3.png" alt="">
+                    <span class="name">CART-T细胞</span>
+                    <a href="" class="iconfont icon-youjiantou1"></a>
+                  </li>
+                  <li >
+                    <img src="./assets/images/product4.png" alt="">
+                    <span class="name">CART-T细胞</span>
+                    <a href="" class="iconfont icon-youjiantou1"></a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="page-section swiper-slide"  data-color="#fff" >
+          <div class="particles-bg" id="particles-js"></div>
+          <div class="clinical">
+            <div class="container">
+              <div class="section_title animation">
+                <h3>临床招募</h3>
+                <a class="more">MORE <i class="iconfont icon-jiajia"></i></a>
+              </div>
+
+              <div class="swiper clinical_swiper">
+                <ul class="clinical_jobs animation swiper-wrapper">
+                  <li class="swiper-slide">
+                    <span class="index">01</span>
+                    <div class="img">
+                      <img src="./assets/images/zm.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                      <h3>多发性骨髓瘤（MM）CAR-T治疗临床研究招募</h3>
+                      <p>治疗方法：CAR-T细胞治疗
+                        研究单位：河南省肿瘤医院
+                        伦理审查编号2017152
+                        招募人数：20人</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <span class="index">02</span>
+                    <div class="img">
+                      <img src="./assets/images/zm1.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                      <h3>多发性骨髓瘤（MM）CAR-T治疗临床研究招募</h3>
+                      <p>治疗方法：CAR-T细胞治疗
+                        研究单位：河南省肿瘤医院
+                        伦理审查编号2017152
+                        招募人数：20人</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <span class="index">03</span>
+                    <div class="img">
+                      <img src="./assets/images/zm2.png" alt="" srcset="">
+                    </div>
+                    <div class="content">
+                      <h3>多发性骨髓瘤（MM）CAR-T治疗临床研究招募</h3>
+                      <p>治疗方法：CAR-T细胞治疗
+                        研究单位：河南省肿瘤医院
+                        伦理审查编号2017152
+                        招募人数：20人</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="clinical_swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- news -->
+          <section class="news swiper-slide">
+            <div class="container">
+              <div class="section_title animation">
+                <h3>新闻中心</h3>
+                <a class="more">MORE <i class="iconfont icon-jiajia"></i></a>
+              </div>
+
+              <div class="swiper news_swiper">
+                <ul class="news_list animation swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="" class="button iconfont icon-a-youjiantouzhixiangyoujiantou"></a>
+                    <div class="new_title">
+                      <h3 class="t_e_1">普瑞金获批坪山区大学生实习基地</h3>
+                      <span class="iconfont icon-shijian">2021-12-13</span>
+                    </div>
+                    <p class="t_e_2">普瑞金生物药业成立于2012年，是一家专注于研发、生产新型生物药的高新技术企业，拥有全球唯一融合了细胞药与纳米抗药的研发平台。</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="" class="button iconfont icon-a-youjiantouzhixiangyoujiantou"></a>
+                    <div class="new_title">
+                      <h3 class="t_e_1">普瑞金获批坪山区大学生实习基地</h3>
+                      <span class="iconfont icon-shijian">2021-12-13</span>
+                    </div>
+                    <p class="t_e_2">普瑞金生物药业成立于2012年，是一家专注于研发、生产新型生物药的高新技术企业，拥有全球唯一融合了细胞药与纳米抗药的研发平台。</p>
+                  </li class="swiper-slide">
+                  <li class="swiper-slide">
+                    <a href="" class="button iconfont icon-a-youjiantouzhixiangyoujiantou"></a>
+                    <div class="new_title">
+                      <h3 class="t_e_1">普瑞金获批坪山区大学生实习基地</h3>
+                      <span class="iconfont icon-shijian">2021-12-13</span>
+                    </div>
+                    <p class="t_e_2">普瑞金生物药业成立于2012年，是一家专注于研发、生产新型生物药的高新技术企业，拥有全球唯一融合了细胞药与纳米抗药的研发平台。</p>
+                  </li>
+                  <li>
+                    <a href="" class="button iconfont icon-a-youjiantouzhixiangyoujiantou"></a>
+                    <div class="new_title">
+                      <h3 class="t_e_1">普瑞金获批坪山区大学生实习基地</h3>
+                      <span class="iconfont icon-shijian">2021-12-13</span>
+                    </div>
+                    <p class="t_e_2">普瑞金生物药业成立于2012年，是一家专注于研发、生产新型生物药的高新技术企业，拥有全球唯一融合了细胞药与纳米抗药的研发平台。</p>
+                  </li>
+                </ul>
+              
+
+
+              </div>
+              <div class="news_swiper-pagination"></div>
+            </div>
+          </section>
+          
+
+        <section class="swiper-slide contact_outer">
+          <div class="container">
+            <div class="contact">
+                <div class="left">
+                  <h2>联系我们</h2>
+                  <div class="boder">
+                    <p>地址：深圳市坪山区金辉路14号生物医药创新产业园1号楼1-4门605室
+                      电话：400-881-8481
+                      邮箱：pregene@pregene.com</p>
+                  </div>
+                <div class="scan">
+                  <img src="./assets/images/scan.png" alt="">
+                  <span>关注公众账号</span>
+                </div>
+                </div>
+                <div  class="right">
+                  <h2>人员招聘</h2>
+                  <div class="boder">
+                    <h3><text>质量研究主管</text><a href="">查看详情</a></h3>
+                    <p class="t_e_2">负责开发细胞培养、细胞检测、细胞功能性相关评价；负责支撑工艺研究相关的所有质量研究工作等。</p>
+                  </div>
+                  <div class="boder">
+                    <h3><text>质量研究员-流式工程师</text><a href="">查看详情</a></h3>
+                    <p class="t_e_2">负责开发细胞培养、细胞检测、细胞功能性相关评价；负责支撑工艺研究相关的所有质量研究工作等。</p>
+                  </div>
+                  <div class="boder">
+                    <h3><text>质量研究员-流式分析员</text><a href="">查看详情</a></h3>
+                    <p class="t_e_2">负责开发细胞培养、细胞检测、细胞功能性相关评价；负责支撑工艺研究相关的所有质量研究工作等。</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <footer>
+            <div class="container">
+              <div class="footer">
+                <div class="copyRight">Copyright ©2022 深圳普瑞金生物药业有限公司      |      粤ICP备2021025280号</div>
+                <ul class="links">          
+                  <li><a href="">关于普瑞金</a></li>
+                  <li><a href="">临床研究</a></li>
+                  <li><a href="">研发管线</a></li>
+                  <li><a href="">新闻中心</a></li>
+                  <li><a href="">联系我们</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </section>
+    </div>
+  </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/common.min.js"></script>  
+    <script src="./js/swiper-bundle.min.js"></script>  
+    <script src="assets/js/particles.min.js"></script>
+    <script src="./assets/js/wave.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <script>
+    var outer_swiper = new Swiper(".outer_swiper", {
+      direction : 'vertical',
+      followFinger : false,
+      speed:800,
+      mousewheel: true,
+      // initialSlide:3,
+      on:{
+        init:function(swiper){
+              slide=this.slides.eq(0);
+            slide.addClass('ani-slide');
+          },
+        transitionStart: function(){
+            for(i=0;i<this.slides.length;i++){
+              slide=this.slides.eq(i);
+                slide.removeClass('ani-slide');
+          }
+          },
+        transitionEnd: function(){
+          slide=this.slides.eq(this.activeIndex);
+          slide.addClass('ani-slide');
+          const {color}= $('.ani-slide').data()
+          $('header').css('color',color??"#434343");
+          },
+      }
+    });
+    // 轮播
+    var top_swiper = new Swiper(".top_swiper", {
+      speed:500,
+      autoplay: {
+        delay: 4000,//1秒切换一次
+      },
+      effect : 'fade',
+      pagination: {
+        el: ".myswiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    if ($(window).width()<=768) {
+        // 轮播
+      var news_swiper = new Swiper(".news_swiper", {
+        speed:500,
+        // autoplay:true,
+        pagination: {
+          el: ".news_swiper-pagination",
+          clickable :true,
+        },
+      });
+      var clinical_swiper = new Swiper(".clinical_swiper", {
+        speed:500,
+        // autoplay:true,
+        pagination: {
+          el: ".clinical_swiper-pagination",
+          clickable :true,
+        },
+      });
+    }
+    </script>
+  </body>
+</html>

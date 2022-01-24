@@ -1,0 +1,344 @@
+.page_nav {
+  margin-bottom: 0;
+}
+
+.page_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 3rem;
+}
+
+.page_title h3 {
+  font-size: 1.5rem;
+  color: #434343;
+}
+
+.page_title p {
+  font-size: 1.2rem;
+  color: #434343;
+  padding: 0.5rem 0;
+}
+
+.page_title::after {
+  content: '';
+  width: 0.05rem;
+  height: 1.5rem;
+  background-color: #7fbe25;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.85rem;
+}
+
+.company p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  white-space: pre-line;
+  color: #434343;
+}
+
+.grade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 4rem 0 6rem;
+}
+
+.grade li {
+  flex: 1;
+}
+
+.grade li:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+.grade h3 {
+  font-family: AvenirLTStd-Black;
+  font-size: 3.2rem;
+  color: #1d2088;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.grade p {
+  font-size: 1.12rem;
+  line-height: 1.2rem;
+  color: #434343;
+}
+
+.grade h3 text {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+
+.waves {
+  background-color: #fafafa;
+  position: relative;
+  padding-bottom: 6rem;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.waves_content {
+  position: relative;
+  z-index: 2;
+}
+
+.waves_main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #434343;
+  margin-bottom: 0.3rem;
+}
+
+.info p {
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.info>div {
+  flex: 1;
+}
+
+.num {
+  font-family: AvenirLTStd-Black;
+  font-size: 15rem;
+  font-weight: 600;
+  margin-left: 4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #1b1b1b;
+}
+
+.years_swiper_box {
+  display: flex;
+  align-items: center;
+}
+
+.years_swiper {
+  height: 40rem;
+}
+
+.years_swiper .swiper-slide {
+  font-family: AvenirLTStd-Black;
+  font-size: 15rem;
+  font-weight: 600;
+  font-stretch: normal;
+  letter-spacing: 0rem;
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  transition: color ease 0.3s;
+}
+
+.years_swiper_box .btns {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.years_swiper_box .iconfont {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5rem;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #DBDBDB;
+  transition: all ease 0.3s;
+}
+
+.years_swiper_box .iconfont:hover {
+  color: #1d2088;
+  border-color: #1d2088;
+}
+
+.years_swiper .swiper-slide-active {
+  color: #1d2088;
+}
+
+.years_swiper_box .swiper-button-disabled:hover {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+
+.years_swiper_box .iconfont:last-child {
+  margin: 0;
+}
+
+.brandvision .container {
+  height: 39rem;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.brandvision h2 {
+  font-size: 1.5rem;
+}
+
+.brandvision p {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+.brandvision h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 4rem;
+  margin-bottom: 6rem;
+}
+
+.teams li {
+  display: flex;
+  align-items: center;
+}
+
+.teams li h3 {
+  font-size: 1.2rem;
+  line-height: 1.35rem;
+  color: #1d2088;
+}
+
+.teams li h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.35rem;
+  color: #595757;
+  padding: 0.5rem 0 1rem;
+}
+
+.teams li p {
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #595757;
+  text-align: justify;
+  white-space: pre-line;
+}
+
+.teams li img {
+  width: 16.5rem;
+  margin-right: 3rem;
+  transition: transform ease 0.5s;
+}
+
+.teams li:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:768px) {
+  .company {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .company img {
+    max-width: 100%;
+  }
+
+  .waves_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .years_swiper {
+    height: 10rem;
+  }
+
+  .num {
+    font-size: 8rem;
+    margin-left: 0;
+  }
+
+  .years_swiper .swiper-slide {
+    font-size: 8rem;
+  }
+
+  .years_swiper_box .iconfont {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .grade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 0;
+  }
+
+  .grade li:not(:last-child) {
+    border-right: unset;
+  }
+
+  .teams {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .teams li {
+    align-items: start;
+  }
+
+  .teams li img {
+    width: 10rem;
+    margin-right: 3rem;
+    transition: transform ease 0.5s;
+  }
+
+  .brandvision h2 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  .brandvision .container {
+    height: 20rem;
+  }
+}

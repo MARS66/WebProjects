@@ -1,0 +1,861 @@
+* {
+  touch-action: pan-y;
+}
+
+header {
+  background-color: unset;
+}
+
+:root {
+  --swiper-pagination-color: #7fbe25;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.outer_swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+}
+
+.top_swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.top_swiper .swiper_bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 2s cubic-bezier(.34, .34, .27, .91);
+  transform: scale(1.2);
+}
+
+.swiper-slide-active .swiper-slide-active .swiper_bg {
+
+  transform: scale(1);
+}
+
+.swiper-button-prev {
+  left: 3rem;
+  color: #1d2088;
+}
+
+.swiper-button-next {
+  right: 3rem;
+  color: #1d2088;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #1d2188a6;
+}
+
+.swiper-button-next:after {
+  font-size: 1rem;
+  font-family: "iconfont";
+  content: "\e613";
+}
+
+.swiper-button-prev:after {
+  font-size: 1rem;
+  font-family: "iconfont";
+  content: "\e63c";
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper_content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper_content img {
+  width: unset;
+  height: 2.6rem;
+}
+
+.swiper_content .name {
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: #1d2088;
+}
+
+.swiper_content h3 {
+  font-size: 4.9rem;
+  font-weight: 600;
+  color: #7fbe25;
+}
+
+.mouse {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mouse .myswiper-pagination {
+  font-family: AvenirLTStd-Black;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #1d2088;
+}
+
+.mouse .icon-shubiao {
+  font-size: 3rem;
+  color: #1d2088;
+  padding: 0.5rem 0;
+}
+
+.mouse .icon-xiashuangjiantou {
+  font-size: 1rem;
+  color: #1d2088;
+  animation: shark ease 0.6s infinite alternate;
+}
+
+@keyframes shark {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.swiper_content button {
+  margin-top: 2rem;
+  height: 2.8rem;
+  background-color: #1d2088;
+  border-radius: 1.375rem;
+  border: solid 0.05rem #1d2088;
+  font-size: 0.9rem;
+  color: #ffffff;
+  transition: border-color ease 0.3s, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.2rem 0 2rem;
+}
+
+.swiper_content button .iconfont {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-left: 2rem;
+}
+
+.swiper_content button:hover {
+  border-color: var(--active);
+  background-color: var(--button-hover);
+}
+
+
+.swiper-slide-active .swiper-slide-active .sw_animation {
+  opacity: 0;
+  transform: translateY(4rem);
+}
+
+.swiper-slide-active .swiper-slide-active .swiper_content .name,
+.swiper-slide-active .swiper-slide-active .swiper_content h3,
+.swiper-slide-active .swiper-slide-active .swiper_content img {
+  animation: 1s show forwards 0.5s;
+}
+
+.swiper-slide-active .swiper-slide-active .swiper_content button {
+  animation: 1s show forwards 0.7s;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.about_outer {
+  height: calc(100% - 12rem);
+}
+
+.grade {
+  height: 12rem;
+  background-color: #1d2088;
+  display: flex;
+  align-items: center;
+}
+
+.grade .container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.grade ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.grade ul li {
+  flex: 1;
+}
+
+.grade ul li:not(:last-child) {
+  border-right: 1px solid #53535370;
+}
+
+.grade h3 {
+  font-family: AvenirLTStd-Black;
+  font-size: 3.2rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.grade p {
+  font-size: 1.12rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.grade h3 text {
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.about {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 8rem 0 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about h3 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.about .about_content {
+  padding: 3rem 0;
+  max-width: 34rem;
+  text-align: justify;
+  font-family: MicrosoftYaHei;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+  text-indent: 1.6rem;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-delay: 0.1s;
+}
+
+.about button {
+  border-radius: 1.375rem;
+  border-color: #8f90c4;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #ffffff;
+  padding: 0 0.2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-delay: 0.2s;
+}
+
+
+.about button .iconfont {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.product_box {
+  box-sizing: border-box;
+  padding: 10rem 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.section_title {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #535353;
+}
+
+.section_title h3 {
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.section_title .more {
+  font-size: 1.2rem;
+  font-weight: normal;
+  left: 1.2rem;
+}
+
+.section_title .more .iconfont {
+  font-size: 1.1rem;
+  margin: 0 0.2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 2rem;
+  transition-delay: 0.2s;
+}
+
+.products li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  position: relative;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.products li img {
+  width: 6rem;
+  height: 6rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.products li .name {
+  padding: 3rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  color: #535353;
+}
+
+.products li a {
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.products li:hover a {
+  opacity: 1;
+}
+
+.products li::after {
+  content: '';
+  position: absolute;
+  top: -0.35rem;
+  left: 0;
+  height: 0.35rem;
+  width: 0;
+  background-image: linear-gradient(to right, #1d2088 60%, #7fbe25);
+  transition: width 0.5s ease-in-out;
+}
+
+.products li:hover {
+  box-shadow: 0.25rem 0.435rem 2.5rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.products li:hover img {
+  transform: rotateY(180deg);
+}
+
+.products li:hover::after {
+  width: 100%;
+}
+
+.clinical {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 8rem 0 2rem;
+}
+
+.clinical .section_title {
+  color: #ffffff;
+}
+
+.clinical_jobs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  transition-delay: 0.2s;
+  padding: 2rem;
+}
+
+.clinical_jobs li {
+  box-sizing: border-box;
+  padding: 2rem;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow ease 0.3s;
+}
+
+.clinical_jobs li .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+.clinical_jobs li .img img {
+  width: 5rem;
+}
+
+.clinical_jobs li .index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 3.3rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background-image: linear-gradient(135deg, #1d2088 60%, #7fbe25);
+  border-bottom-right-radius: 1rem;
+  font-family: AvenirLTStd-Black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.clinical_jobs .content {
+  width: 100%;
+}
+
+.clinical_jobs .content h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  color: #434343;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+  transition: border ease 0.3s, color ease 0.3s;
+  margin-bottom: 1rem;
+}
+
+.clinical_jobs .content p {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  color: #434343;
+  white-space: pre-line;
+}
+
+.clinical_jobs li:hover h3 {
+  color: #1d2088;
+  border-color: #1d2088;
+}
+
+.clinical_jobs li:hover {
+  box-shadow: 0 0.4rem 2rem 0rem rgba(0, 0, 0, 0.3);
+}
+
+.news {
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  padding-top: 8rem;
+  overflow: hidden;
+}
+
+.news_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  transition-delay: 0.2s;
+}
+
+.news_list li {
+  padding: 2rem;
+  background-color: #ffffff;
+  transition: box-shadow ease 0.3s;
+  position: relative;
+  height: unset;
+  width: unset;
+}
+
+.news_list li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+  opacity: 0;
+  transition: opacity ease 0.3s;
+  background-image: linear-gradient(to right, #1d2088 60%, #7fbe25);
+}
+
+.news_list li .button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3rem;
+  background-color: #1e2188;
+  opacity: 0;
+  transition: opacity ease 0.3s, background-color ease 0.3s;
+}
+
+.news_list li .button:hover {
+  background-color: #7fbe25;
+}
+
+.news_list li:hover .button {
+  opacity: 1;
+}
+
+.news_list li:hover::after {
+  opacity: 1;
+}
+
+.news_list li p {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #7d7d7d;
+}
+
+.new_title {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.new_title h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #434343;
+  transition: color ease 0.3s;
+}
+
+.news_list li:hover h3 {
+  color: #1d2088;
+}
+
+.new_title span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #959595;
+  padding: 1rem 0;
+}
+
+.new_title span::before {
+  margin-right: 0.3rem;
+}
+
+.news_list li:hover {
+  box-shadow: 0.25rem 0.435rem 2.5rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.contact_outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.contact h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #535353;
+  margin-bottom: 3rem;
+}
+
+.contact .left p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.6rem;
+  letter-spacing: 0rem;
+  color: #535353;
+  white-space: pre-line;
+}
+
+.contact .boder {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 1.5rem;
+}
+
+.contact .right h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #535353;
+  margin-bottom: 0.6rem;
+}
+
+.contact .right h3 a {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  color: #7fbe25;
+  border-bottom: 1px solid #7fbe25;
+}
+
+.contact .right p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #959595;
+}
+
+.scan {
+  width: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.scan img {
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .swiper_content img {
+    height: 2rem;
+  }
+
+  .swiper_content .name {
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+  }
+
+  .swiper_content h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #7fbe25;
+  }
+
+  .about_outer {
+    height: calc(100% - 16rem);
+  }
+
+  .about .about_content {
+    line-height: 1.6rem;
+  }
+
+  .grade {
+    height: 16rem;
+    background-color: #1d2088;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .grade ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 0;
+  }
+
+  .grade ul li:not(:last-child) {
+    border-right: unset;
+  }
+
+  .product_box {
+    display: flex;
+    align-items: center;
+  }
+
+  .product_box>div {
+    width: 100%;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+  }
+
+  .products li {
+    padding: 3rem 0 1rem;
+  }
+
+  .products li .name {
+    padding: 2rem 0.5rem;
+  }
+
+  .clinical {
+    display: flex;
+    align-items: center;
+  }
+
+  .clinical .container {
+    width: 100%;
+  }
+
+  .clinical_jobs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .news {
+    display: flex;
+    align-items: center;
+  }
+
+  .clinical .container,
+  .news .container {
+    overflow: hidden;
+  }
+
+  .clinical .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+
+  .clinical .swiper-pagination-bullet {
+    background: #ffff;
+  }
+
+  .clinical_swiper,
+  .news_swiper {
+    width: 100%;
+
+  }
+
+  .clinical_jobs {
+    padding: 0;
+    display: flex;
+    gap: 0;
+  }
+
+  .news_list {
+    display: flex;
+    gap: 0;
+  }
+
+  .clinical_swiper li,
+  .news_list li {
+    box-sizing: border-box;
+  }
+
+  .swiper-pagination-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact h2 {
+    text-align: center;
+  }
+
+
+  .contact_outer {
+    justify-content: center;
+  }
+
+  .contact .right {
+    display: none;
+  }
+
+  .copyRight {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .footer .links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

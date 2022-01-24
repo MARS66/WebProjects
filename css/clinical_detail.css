@@ -1,0 +1,74 @@
+.article_title {
+  margin-top: 7rem;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.article_title h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #1d2088;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.8rem;
+}
+
+.article_title .iconfont {
+  margin-right: 2rem;
+  line-height: 1.5rem;
+}
+
+.article_title .iconfont::before {
+  margin-right: 0.3rem;
+}
+
+.icon-shijian::before {
+  font-size: 1.2rem;
+}
+
+.article_title ul {
+  padding-top: 2rem;
+  width: 100%;
+  text-align: start;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #434343;
+}
+
+.article_content {
+  padding-bottom: 6rem;
+}
+
+.article_content h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: #1d2088;
+  margin: 3.4rem 0 2rem;
+  display: flex;
+}
+
+.article_content h3::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  margin-right: 1.5rem;
+  background-image: linear-gradient(to top, #1d2088 50%, #7fbe25);
+}
+
+.article_content p {
+  text-align: start;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  text-align: justify;
+  white-space: pre-line;
+}

@@ -1,0 +1,157 @@
+.clinical_jobs {
+  padding: 2rem 0 6rem;
+}
+
+.clinical_jobs li {
+  box-sizing: border-box;
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  transition: box-shadow ease 0.3s;
+  margin-bottom: 1.5rem;
+  background-color: #fafafa;
+  border-bottom: 0.15rem solid transparent;
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: all 1s cubic-bezier(.165, .84, .44, 1);
+}
+
+.clinical_jobs .ani {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clinical_jobs li .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  margin-right: 3.4rem;
+}
+
+.clinical_jobs li .img img {
+  width: 5rem;
+}
+
+.clinical_jobs li .index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 3.3rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  background-image: linear-gradient(135deg, #1d2088 60%, #7fbe25);
+  border-bottom-right-radius: 1rem;
+  font-family: AvenirLTStd-Black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.clinical_jobs .content {
+  flex: 1;
+}
+
+.clinical_jobs .content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #434343;
+  padding-bottom: 1rem;
+  transition: color ease 0.3s;
+}
+
+.clinical_jobs .content p {
+  font-family: MicrosoftYaHei;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  color: #535353;
+  white-space: pre-line;
+}
+
+.clinical_jobs li a {
+
+  color: #1d2088;
+  opacity: 0;
+  transition: opacity ease 0.3s;
+  font-size: 1rem;
+}
+
+.clinical_jobs li:hover {
+  border-bottom: 0.15rem solid #1d2088;
+}
+
+.clinical_jobs li:hover a {
+  opacity: 1;
+}
+
+.clinical_jobs li:hover h3 {
+  color: #1d2088;
+}
+
+.content_t {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  gap: 1.8rem;
+}
+
+.content_t p {
+  padding-right: 2rem;
+}
+
+.content_t p:first-child {
+
+  border-right: 1px solid #eeeeee;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width:768px) {
+  .clinical_jobs li {
+    flex-direction: column;
+  }
+
+  .clinical_jobs .content {
+    width: 100%;
+  }
+
+  .clinical_jobs li .img {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .content_t p {
+    padding-right: 0;
+  }
+
+  .content_t p:first-child {
+    padding-bottom: 1.8rem;
+    border-right: unset;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .content_t {
+    grid-template-columns: 1fr;
+  }
+
+  .clinical_jobs li a {
+    opacity: 1;
+    font-size: 1.5rem;
+  }
+
+  .clinical_jobs .content h3 {
+    padding-bottom: 1.8rem;
+  }
+}

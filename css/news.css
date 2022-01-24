@@ -1,0 +1,140 @@
+.news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.news .info {
+  padding: 1.75rem;
+  background-color: #fafafa;
+}
+
+.news .imgbox {
+  width: 100%;
+  font-size: 0;
+  overflow: hidden;
+  height: 12.6rem;
+}
+
+.news .imgbox img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.news li:hover img {
+  transform: scale(1.1);
+}
+
+.time {
+  margin-top: -5rem;
+  width: 4.6rem;
+  background-color: #1d2088;
+  padding: 0.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.time .day {
+  font-family: AvenirLTStd-Black;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.time .date {
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #ffffff;
+}
+
+.news .info h3 {
+  padding: 1rem 0;
+  font-family: MicrosoftYaHei;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #1e2188;
+}
+
+.news .info p {
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  color: #7d7d7d;
+}
+
+.easeIn {
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(.075, .82, .165, 1);
+}
+
+.easeIn .imgbox img {
+  width: 50%;
+  transition: all 1s cubic-bezier(.075, .82, .165, 1);
+}
+
+.ani {
+  opacity: 1;
+}
+
+.ani .imgbox img {
+  width: 100%;
+}
+
+.pagination {
+  padding: 3rem 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  text-align: center;
+  line-height: 1.4rem;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
+
+.pagination a:hover,
+.pagination .active a {
+  background-color: #1d2088;
+  color: #ffffff;
+  border-color: #1d2088;
+}
+
+.page_title {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.page_title h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #434343;
+  margin-bottom: 1rem;
+}
+
+.line {
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #1d2088 60%, #7fbe25);
+}
+
+@media screen and (max-width:768px) {
+  .news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
